@@ -29,6 +29,10 @@ xcuserdata
 *.opensdf
 *.suo
 ipch/
+obj
+*.db
+*.opendb
+
  
 #Eclipse
 .metadata
