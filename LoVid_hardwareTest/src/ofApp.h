@@ -40,5 +40,10 @@ public:
     vector <ofVec2f> capPts;
     
     vector<float> lastPings;
+
+	ofFbo drawFbo;
+
+	string errorLog;
+
 		
 };

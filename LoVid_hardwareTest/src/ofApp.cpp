@@ -51,8 +51,11 @@ void ofApp::setup(){
     
     lastPings.resize(numBeams+numCaps,0.0); // tracks time of last sensor's ping
     
-    serial.setup(0, 115200);
+	serial.listDevices();
+    serial.setup(1, 115200);
     com.setSerial(&serial);
+
+	drawFbo.allocate(ofGetWidth(),ofGetHeight(),GL_RGBA);
 }
 
 //--------------------------------------------------------------
@@ -60,6 +63,13 @@ void ofApp::update(){
     
     // read in serial
     int nMsgs = com.update();
+
+	if (ofStringTimesInString(errorLog, "\n") > 20) {
+		auto lines = ofSplitString(errorLog,"\n");
+		if (lines.size() > 0)
+			errorLog = lines[lines.size()-1];
+		else errorLog = "";
+	}
     
     // update beam + cap states
     for (int i=0; i<nMsgs; i++){ // loop thru msgs
@@ -83,7 +93,10 @@ void ofApp::update(){
                     ofLogVerbose("commander") << "beam [" << idx << "] state: " << beamStates[idx] << " << header: " << h << ", val: " << val;
                 }
                 else {
-                    ofLogError("commander") << "incorrect val for IR beam - header: " << h << ", val: " << val;
+                    stringstream msg;
+					msg << "incorrect val for IR beam - header: " << h << ", val: " << val;
+					ofLogError("commander") << msg.str();
+					errorLog += msg.str() + "\n";
                 }
             }
             
@@ -99,7 +112,10 @@ void ofApp::update(){
             }
             
             else {
-                ofLogError("commander") << "header out of range (A-" << (int)'A'+numBeams+numCaps-1 << "): " << h << ", val: " << val;
+				stringstream msg;
+				msg << "header out of range (A-" << (int)'A'+numBeams+numCaps-1 << "): " << h << ", val: " << val;
+                ofLogError("commander") << msg.str();
+				errorLog += msg.str() + "\n";
             }
         }
     }
@@ -108,16 +124,22 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    
+
+	ofPushMatrix();
+
     ofVec2f center(ofGetWidth()*0.5, ofGetHeight()*0.5);
     
     // IR
     for (int i=0; i<numBeams; i++){
+
+		bool alive = 
+			(lastPings[i] != 0.0) && 
+			(ofGetElapsedTimef() - lastPings[i] < sensorTimeout); // heard from sensor <2s ago
     
         // draw beams
         float hue = ofMap(beamStates[i], 0, 62500, 177, 255, true);
         float brt = ofMap(beamStates[i], 0, 62500, 200, 255, true);
-        ofSetColor(ofColor::fromHsb(hue,255,brt));
+        ofSetColor( alive ? ofColor::fromHsb(hue,255,brt) : ofColor(150,80,110));
         float lw = ofMap(beamStates[i],0,62500,3,20);
         ofSetLineWidth(lw);
         
@@ -125,8 +147,7 @@ void ofApp::draw(){
         
         // label
         char h = 'A' + i;
-        bool alive = lastPings[i] != 0.0 && ofGetElapsedTimef() - lastPings[i] < sensorTimeout; // heard from sensor <2s ago
-        string sts = ofToString(h) + (alive ? (beamStates[i] > 62500*.2 ? " BREAK" : "") : " no signal");
+        string sts = ofToString(h) + (alive ? (beamStates[i] > 62500*.1 ? " BREAK" : "") : " NO signal");
         ofSetColor( alive ? ofColor(255) : ofColor(150,80,110) );
         ofVec2f pt = (beamPts[i].first + beamPts[i].second) * 0.5;
         pt = center.getInterpolated(pt, 1.1);
@@ -157,9 +178,14 @@ void ofApp::draw(){
         ofDrawBitmapString(sts, capPts[i] + ofVec2f(-30,30));
         
     }
-    
-    
 
+	ofPopMatrix();
+
+	// Error log
+
+	//if (errorLog != "") {
+	//	ofDrawBitmapStringHighlight(errorLog, 10, 30, ofColor(0,100), ofColor(255,0,0,200));
+	//}
 }
 
 //--------------------------------------------------------------
