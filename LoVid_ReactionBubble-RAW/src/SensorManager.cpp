@@ -57,8 +57,6 @@ int SensorManager::update()
 					{
 						beams[index].set(val);
 						ofLogVerbose("SensorManager") << "IR beam " << h << " BREAK - " << val;
-
-						// do something here?  trigger callback?  decay function on beams?
 					}
 
 					// PING

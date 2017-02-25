@@ -36,7 +36,7 @@ class ofApp : public ofBaseApp{
 		void draw();
 		void exit();
 
-		void beamBreak(int beamIdx, Beam& beam) {} // trigger or switch video
+		void beamBreak(int beamIdx, Beam& beam); // trigger or switch video
 		void capSense(int capIdx, Cap& cap); // adjust video
 
 		void findPeople();

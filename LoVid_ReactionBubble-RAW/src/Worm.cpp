@@ -170,6 +170,13 @@ ofVec2f Worm::seek(ofVec2f target, float maxDist) {
 	return steer;
 }
 
+ofVec2f Worm::avoid(ofVec2f target, float maxDist) {
+	ofVec2f steer = avoid(target);
+	float d = target.distance(pos);
+	steer *= ofMap(d, 0, maxDist, 1, 0, true);
+	return steer;
+}
+
 ofVec2f Worm::separate(vector<Worm>& worms, float desiredSeparation) {
 
 	ofVec2f steer = ofVec2f(0, 0);

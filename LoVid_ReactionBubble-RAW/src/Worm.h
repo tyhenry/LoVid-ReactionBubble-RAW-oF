@@ -29,6 +29,7 @@ public:
 	ofVec2f seek(ofVec2f target);
 	ofVec2f avoid(ofVec2f target);
 	ofVec2f seek(ofVec2f target, float maxDist);
+	ofVec2f avoid(ofVec2f target, float maxDist);
 
 	void flock(vector<Worm>& worms, float sepW = 1.5f, float aliW = 1.f, float cohW = 1.f); // weights
 	ofVec2f separate (vector<Worm>& worms, float desiredSeparation = 25.f);

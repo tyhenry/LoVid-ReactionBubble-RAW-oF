@@ -6,6 +6,8 @@ void ofApp::setup() {
 
 	//ofSetLogLevel("SensorManager", OF_LOG_VERBOSE);
 	ofSetLogLevel("Cap", OF_LOG_VERBOSE);
+	ofSetLogLevel("Beam", OF_LOG_VERBOSE);
+	ofSetLogLevel("ofApp", OF_LOG_VERBOSE);
 
 	ofDisableArbTex();
 
@@ -16,16 +18,11 @@ void ofApp::setup() {
 
 	wormBounds.set(0,0,1366,768);
 
-
+	
 	// setup displays
 
-	for (int i = 0; i < 3; i++) {
-		displays.push_back(Display(1366, 768));
-		displays.push_back(Display(1366, 768));
-		displays.push_back(Display(1366, 768));
-	}
-
-	displays.push_back(Display(ofW,ofH)); // full screen
+	displays.resize(3);
+	for (int i=0; i<3; i++) displays[i] = Display(1366,768);
 
 	// setup cameras
 
@@ -59,6 +56,7 @@ void ofApp::setup() {
 		<< "could not connect to serial [" << serialIdx << "] "
 		<< "at speed " << serialSpeed;
 
+
 	// load vids
 
 	ofDirectory walkingDir(ofToDataPath("videos/walking"));
@@ -66,18 +64,20 @@ void ofApp::setup() {
 	walkingDir.allowExt("mpeg");
 	walkingDir.listDir();
 
+	walkingVids.resize(5);
+	int idx = 0; int good = 0;
 	for (auto& file : walkingDir.getFiles()) {
-		walkingVids.push_back(ofVideoPlayer());
 		string fn = "videos/walking/" + file.getFileName();
-		if (walkingVids.back().load(fn)) {
-			walkingVids.back().play();
-			walkingVids.back().setVolume(0);
+		if (walkingVids[idx].load(fn)) {
+			walkingVids[idx].play();
+			walkingVids[idx].setVolume(0);
+			good++;
 		}
-		else walkingVids.pop_back();
+		idx++;
 	}
-	cout << "loaded " << walkingVids.size() << " walking vids" << endl;
+	ofLogVerbose("ofApp") << "loaded " << good << " walking vids successfully";
 
-	for (int i=0; i<walkingVids.size(); i++) {
+	for (int i=0; i<5; i++) {
 		walkingVidPlaces.push_back(i);
 	}
 
@@ -173,9 +173,6 @@ void ofApp::draw() {
 
 	// BACKGROUND VIDEOS
 
-	//displays[3].begin();
-	ofClear(0);
-
 	float w = ofW / 5.;
 	float x = 0;
 	float sxPct = 0;
@@ -189,9 +186,6 @@ void ofApp::draw() {
 		x += w;
 		sxPct += 0.1;
 	}
-
-	//displays[3].end();
-	//displays[3].draw(0,0);
 
 	// CAMS
 
@@ -322,6 +316,14 @@ void ofApp::exit()
 	kinect1.close();
 	kinect2.close();
 }
+
+void ofApp::beamBreak(int beamIdx, Beam& beam) { // trigger or switch video
+
+	int vidIdx = ofRandom(4.999);
+	walkingVidPlaces[beamIdx] = vidIdx;
+	ofLogVerbose("ofApp") << "beam [" << beamIdx << "] switched to vid [" << vidIdx << "]";
+}
+
 
 void ofApp::capSense(int capIdx, Cap& cap) {
 
