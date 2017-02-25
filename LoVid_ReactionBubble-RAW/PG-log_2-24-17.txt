@@ -1,0 +1,2402 @@
+[verbose] 	addons.make
+[verbose] 	bin
+[verbose] 	src
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\apps\LoVid-ReactionBubble-RAW-oF2\LoVid_ReactionBubble-RAW\"
+[notice ] -----------------------------------------------
+[notice ] setting OF path to: C:\Users\lovid\Desktop\of_v0.9.8_vs_release
+[notice ] from -o option
+[notice ] target platform is: vs
+[notice ] updating project C:\Users\lovid\Desktop\of_v0.9.8_vs_release\apps\LoVid-ReactionBubble-RAW-oF2\LoVid_ReactionBubble-RAW
+[verbose] loaded filter 
+[verbose] returning path ../../../
+
+[verbose] 	Beam.h
+[verbose] 	Cap.h
+[verbose] 	Commander.cpp
+[verbose] 	Commander.hpp
+[verbose] 	Display.h
+[verbose] 	main.cpp
+[verbose] 	ofApp.cpp
+[verbose] 	ofApp.h
+[verbose] 	Sensor.h
+[verbose] 	SensorManager.cpp
+[verbose] 	SensorManager.h
+[verbose] 	Worm.cpp
+[verbose] 	Worm.h
+[verbose] listed 13 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\apps\LoVid-ReactionBubble-RAW-oF2\LoVid_ReactionBubble-RAW\src\"
+[verbose] returning path ../../../
+
+[verbose] in fromFS, trying src C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxGui/src
+[verbose] 	ofxBaseGui.cpp
+[verbose] 	ofxBaseGui.h
+[verbose] 	ofxButton.cpp
+[verbose] 	ofxButton.h
+[verbose] 	ofxGui.h
+[verbose] 	ofxGuiGroup.cpp
+[verbose] 	ofxGuiGroup.h
+[verbose] 	ofxLabel.cpp
+[verbose] 	ofxLabel.h
+[verbose] 	ofxPanel.cpp
+[verbose] 	ofxPanel.h
+[verbose] 	ofxSlider.cpp
+[verbose] 	ofxSlider.h
+[verbose] 	ofxSliderGroup.cpp
+[verbose] 	ofxSliderGroup.h
+[verbose] 	ofxToggle.cpp
+[verbose] 	ofxToggle.h
+[verbose] listed 17 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxGui/src\"
+[verbose] 	ofxBaseGui.cpp
+[verbose] 	ofxBaseGui.h
+[verbose] 	ofxButton.cpp
+[verbose] 	ofxButton.h
+[verbose] 	ofxGui.h
+[verbose] 	ofxGuiGroup.cpp
+[verbose] 	ofxGuiGroup.h
+[verbose] 	ofxLabel.cpp
+[verbose] 	ofxLabel.h
+[verbose] 	ofxPanel.cpp
+[verbose] 	ofxPanel.h
+[verbose] 	ofxSlider.cpp
+[verbose] 	ofxSlider.h
+[verbose] 	ofxSliderGroup.cpp
+[verbose] 	ofxSliderGroup.h
+[verbose] 	ofxToggle.cpp
+[verbose] 	ofxToggle.h
+[verbose] listed 17 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxGui/src\"
+[verbose] adding addon include path: ../../../addons\ofxGui/src
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxBaseGui.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxBaseGui.h
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxButton.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxButton.h
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxGui.h
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxGuiGroup.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxGuiGroup.h
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxLabel.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxLabel.h
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxPanel.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxPanel.h
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxSlider.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxSlider.h
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxSliderGroup.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxSliderGroup.h
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxToggle.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxGui/src\ofxToggle.h
+[verbose] returning path ../../../
+
+[verbose] in fromFS, trying src C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/src
+[verbose] 	extra
+[verbose] 	ofxBase3DVideo.h
+[verbose] 	ofxKinect.cpp
+[verbose] 	ofxKinect.h
+[verbose] listed 4 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/src\"
+[verbose] 	ofxKinectExtras.cpp
+[verbose] 	ofxKinectExtras.h
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/src\extra\"
+[verbose] 	libfreenect
+[verbose] 	libusb-1.0
+[verbose] 	libusb-win32
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\"
+[verbose] 	APACHE20
+[verbose] 	CONTRIB
+[verbose] 	GPL2
+[verbose] 	include
+[verbose] 	platform
+[verbose] 	src
+[verbose] listed 6 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\"
+[verbose] 	libfreenect.h
+[verbose] 	libfreenect_audio.h
+[verbose] 	libfreenect_registration.h
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\include\"
+[verbose] 	linux
+[verbose] 	windows
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\"
+[verbose] 	udev
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\linux\"
+[verbose] 	51-kinect.rules
+[verbose] 	README
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\linux\udev\"
+[verbose] 	inf
+[verbose] 	libusb10emu
+[verbose] 	README.TXT
+[verbose] 	stdbool.h
+[verbose] 	unistd.h
+[verbose] listed 5 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\"
+[verbose] 	xbox nui audio
+[verbose] 	xbox nui camera
+[verbose] 	xbox nui motor
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\"
+[verbose] 	amd64
+[verbose] 	ia64
+[verbose] 	libusb-win32-bin-README.txt
+[verbose] 	license
+[verbose] 	x86
+[verbose] 	Xbox_NUI_Audio.cat
+[verbose] 	Xbox_NUI_Audio.inf
+[verbose] listed 7 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\amd64\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\ia64\"
+[verbose] 	libusb-win32
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\license\"
+[verbose] 	installer_license.txt
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\license\libusb-win32\"
+[verbose] 	libusb0.sys
+[verbose] 	libusb0_x86.dll
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\x86\"
+[verbose] 	amd64
+[verbose] 	ia64
+[verbose] 	libusb-win32-bin-README.txt
+[verbose] 	license
+[verbose] 	x86
+[verbose] 	Xbox_NUI_Camera.cat
+[verbose] 	Xbox_NUI_Camera.inf
+[verbose] listed 7 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\amd64\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\ia64\"
+[verbose] 	libusb-win32
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\license\"
+[verbose] 	installer_license.txt
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\license\libusb-win32\"
+[verbose] 	libusb0.sys
+[verbose] 	libusb0_x86.dll
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\x86\"
+[verbose] 	amd64
+[verbose] 	ia64
+[verbose] 	libusb-win32-bin-README.txt
+[verbose] 	license
+[verbose] 	x86
+[verbose] 	Xbox_NUI_Motor.cat
+[verbose] 	Xbox_NUI_Motor.inf
+[verbose] listed 7 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\amd64\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\ia64\"
+[verbose] 	libusb-win32
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\license\"
+[verbose] 	installer_license.txt
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\license\libusb-win32\"
+[verbose] 	libusb0.sys
+[verbose] 	libusb0_x86.dll
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\x86\"
+[verbose] 	libusb-1.0
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\libusb10emu\"
+[verbose] 	failguard.cpp
+[verbose] 	failguard.h
+[verbose] 	libusb.h
+[verbose] 	libusbemu.cpp
+[verbose] 	libusbemu_internal.h
+[verbose] 	libusbemu_threads.h
+[verbose] 	libusbemu_threads_win32.h
+[verbose] listed 7 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\"
+[verbose] 	audio.c
+[verbose] 	cameras.c
+[verbose] 	cameras.h
+[verbose] 	core.c
+[verbose] 	flags.c
+[verbose] 	flags.h
+[verbose] 	freenect_internal.h
+[verbose] 	keep_alive.c
+[verbose] 	keep_alive.h
+[verbose] 	loader.c
+[verbose] 	loader.h
+[verbose] 	registration.c
+[verbose] 	registration.h
+[verbose] 	tilt.c
+[verbose] 	usb_libusb10.c
+[verbose] 	usb_libusb10.h
+[verbose] listed 16 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\src\"
+[verbose] 	include
+[verbose] 	lib
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-1.0\"
+[verbose] 	libusb-1.0
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-1.0\include\"
+[verbose] 	libusb.h
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-1.0\include\libusb-1.0\"
+[verbose] listed 0 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-1.0\lib\"
+[verbose] 	include
+[verbose] 	lib
+[verbose] 	license
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-win32\"
+[verbose] 	lusb0_usb.h
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-win32\include\"
+[verbose] 	vs
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-win32\lib\"
+[verbose] 	Win32
+[verbose] 	x64
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-win32\lib\vs\"
+[verbose] 	libusb.lib
+[verbose] 	libusbd.lib
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-win32\lib\vs\Win32\"
+[verbose] 	libusb.lib
+[verbose] 	libusbd.lib
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-win32\lib\vs\x64\"
+[verbose] 	AUTHORS.txt
+[verbose] 	COPYING_LGPL.txt
+[verbose] 	README.txt
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-win32\license\"
+[verbose] 	libfreenect
+[verbose] 	libusb-1.0
+[verbose] 	libusb-win32
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\"
+[verbose] 	APACHE20
+[verbose] 	CONTRIB
+[verbose] 	GPL2
+[verbose] 	include
+[verbose] 	platform
+[verbose] 	src
+[verbose] listed 6 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\"
+[verbose] 	libfreenect.h
+[verbose] 	libfreenect_audio.h
+[verbose] 	libfreenect_registration.h
+[verbose] listed 3 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\include\"
+[verbose] 	linux
+[verbose] 	windows
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\"
+[verbose] 	udev
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\linux\"
+[verbose] 	51-kinect.rules
+[verbose] 	README
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\linux\udev\"
+[verbose] 	inf
+[verbose] 	libusb10emu
+[verbose] 	README.TXT
+[verbose] 	stdbool.h
+[verbose] 	unistd.h
+[verbose] listed 5 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\"
+[verbose] 	xbox nui audio
+[verbose] 	xbox nui camera
+[verbose] 	xbox nui motor
+[verbose] listed 3 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\"
+[verbose] 	amd64
+[verbose] 	ia64
+[verbose] 	libusb-win32-bin-README.txt
+[verbose] 	license
+[verbose] 	x86
+[verbose] 	Xbox_NUI_Audio.cat
+[verbose] 	Xbox_NUI_Audio.inf
+[verbose] listed 7 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui audio\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui audio\amd64\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui audio\ia64\"
+[verbose] 	libusb-win32
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui audio\license\"
+[verbose] 	installer_license.txt
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui audio\license\libusb-win32\"
+[verbose] 	libusb0.sys
+[verbose] 	libusb0_x86.dll
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui audio\x86\"
+[verbose] 	amd64
+[verbose] 	ia64
+[verbose] 	libusb-win32-bin-README.txt
+[verbose] 	license
+[verbose] 	x86
+[verbose] 	Xbox_NUI_Camera.cat
+[verbose] 	Xbox_NUI_Camera.inf
+[verbose] listed 7 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui camera\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui camera\amd64\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui camera\ia64\"
+[verbose] 	libusb-win32
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui camera\license\"
+[verbose] 	installer_license.txt
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui camera\license\libusb-win32\"
+[verbose] 	libusb0.sys
+[verbose] 	libusb0_x86.dll
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui camera\x86\"
+[verbose] 	amd64
+[verbose] 	ia64
+[verbose] 	libusb-win32-bin-README.txt
+[verbose] 	license
+[verbose] 	x86
+[verbose] 	Xbox_NUI_Motor.cat
+[verbose] 	Xbox_NUI_Motor.inf
+[verbose] listed 7 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui motor\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui motor\amd64\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui motor\ia64\"
+[verbose] 	libusb-win32
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui motor\license\"
+[verbose] 	installer_license.txt
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui motor\license\libusb-win32\"
+[verbose] 	libusb0.sys
+[verbose] 	libusb0_x86.dll
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui motor\x86\"
+[verbose] 	libusb-1.0
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\"
+[verbose] 	failguard.cpp
+[verbose] 	failguard.h
+[verbose] 	libusb.h
+[verbose] 	libusbemu.cpp
+[verbose] 	libusbemu_internal.h
+[verbose] 	libusbemu_threads.h
+[verbose] 	libusbemu_threads_win32.h
+[verbose] listed 7 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\"
+[verbose] 	audio.c
+[verbose] 	cameras.c
+[verbose] 	cameras.h
+[verbose] 	core.c
+[verbose] 	flags.c
+[verbose] 	flags.h
+[verbose] 	freenect_internal.h
+[verbose] 	keep_alive.c
+[verbose] 	keep_alive.h
+[verbose] 	loader.c
+[verbose] 	loader.h
+[verbose] 	registration.c
+[verbose] 	registration.h
+[verbose] 	tilt.c
+[verbose] 	usb_libusb10.c
+[verbose] 	usb_libusb10.h
+[verbose] listed 16 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\src\"
+[verbose] 	include
+[verbose] 	lib
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libusb-1.0\"
+[verbose] 	libusb-1.0
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libusb-1.0\include\"
+[verbose] 	libusb.h
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libusb-1.0\include\libusb-1.0\"
+[verbose] listed 0 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libusb-1.0\lib\"
+[verbose] listed 0 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libusb-1.0\lib\"
+[verbose] 	include
+[verbose] 	lib
+[verbose] 	license
+[verbose] listed 3 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libusb-win32\"
+[verbose] 	lusb0_usb.h
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libusb-win32\include\"
+[verbose] 	vs
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libusb-win32\lib\"
+[verbose] 	Win32
+[verbose] 	x64
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libusb-win32\lib\vs\"
+[verbose] 	libusb.lib
+[verbose] 	libusbd.lib
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libusb-win32\lib\vs\Win32\"
+[verbose] 	libusb.lib
+[verbose] 	libusbd.lib
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libusb-win32\lib\vs\x64\"
+[verbose] 	AUTHORS.txt
+[verbose] 	COPYING_LGPL.txt
+[verbose] 	README.txt
+[verbose] listed 3 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libusb-win32\license\"
+[verbose] 	libfreenect
+[verbose] 	libusb-1.0
+[verbose] 	libusb-win32
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\"
+[verbose] 	APACHE20
+[verbose] 	CONTRIB
+[verbose] 	GPL2
+[verbose] 	include
+[verbose] 	platform
+[verbose] 	src
+[verbose] listed 6 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\"
+[verbose] 	libfreenect.h
+[verbose] 	libfreenect_audio.h
+[verbose] 	libfreenect_registration.h
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\include\"
+[verbose] 	linux
+[verbose] 	windows
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\"
+[verbose] 	inf
+[verbose] 	libusb10emu
+[verbose] 	README.TXT
+[verbose] 	stdbool.h
+[verbose] 	unistd.h
+[verbose] listed 5 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\"
+[verbose] 	xbox nui audio
+[verbose] 	xbox nui camera
+[verbose] 	xbox nui motor
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\"
+[verbose] 	amd64
+[verbose] 	ia64
+[verbose] 	libusb-win32-bin-README.txt
+[verbose] 	license
+[verbose] 	x86
+[verbose] 	Xbox_NUI_Audio.cat
+[verbose] 	Xbox_NUI_Audio.inf
+[verbose] listed 7 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\amd64\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\ia64\"
+[verbose] 	libusb-win32
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\license\"
+[verbose] 	installer_license.txt
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\license\libusb-win32\"
+[verbose] 	libusb0.sys
+[verbose] 	libusb0_x86.dll
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\x86\"
+[verbose] 	amd64
+[verbose] 	ia64
+[verbose] 	libusb-win32-bin-README.txt
+[verbose] 	license
+[verbose] 	x86
+[verbose] 	Xbox_NUI_Camera.cat
+[verbose] 	Xbox_NUI_Camera.inf
+[verbose] listed 7 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\amd64\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\ia64\"
+[verbose] 	libusb-win32
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\license\"
+[verbose] 	installer_license.txt
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\license\libusb-win32\"
+[verbose] 	libusb0.sys
+[verbose] 	libusb0_x86.dll
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\x86\"
+[verbose] 	amd64
+[verbose] 	ia64
+[verbose] 	libusb-win32-bin-README.txt
+[verbose] 	license
+[verbose] 	x86
+[verbose] 	Xbox_NUI_Motor.cat
+[verbose] 	Xbox_NUI_Motor.inf
+[verbose] listed 7 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\amd64\"
+[verbose] 	libusb0.dll
+[verbose] 	libusb0.sys
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\ia64\"
+[verbose] 	libusb-win32
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\license\"
+[verbose] 	installer_license.txt
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\license\libusb-win32\"
+[verbose] 	libusb0.sys
+[verbose] 	libusb0_x86.dll
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\x86\"
+[verbose] 	libusb-1.0
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\libusb10emu\"
+[verbose] 	failguard.cpp
+[verbose] 	failguard.h
+[verbose] 	libusb.h
+[verbose] 	libusbemu.cpp
+[verbose] 	libusbemu_internal.h
+[verbose] 	libusbemu_threads.h
+[verbose] 	libusbemu_threads_win32.h
+[verbose] listed 7 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\"
+[verbose] 	audio.c
+[verbose] 	cameras.c
+[verbose] 	cameras.h
+[verbose] 	core.c
+[verbose] 	flags.c
+[verbose] 	flags.h
+[verbose] 	freenect_internal.h
+[verbose] 	keep_alive.c
+[verbose] 	keep_alive.h
+[verbose] 	loader.c
+[verbose] 	loader.h
+[verbose] 	registration.c
+[verbose] 	registration.h
+[verbose] 	tilt.c
+[verbose] 	usb_libusb10.c
+[verbose] 	usb_libusb10.h
+[verbose] listed 16 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libfreenect\src\"
+[verbose] 	include
+[verbose] 	lib
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-1.0\"
+[verbose] 	libusb-1.0
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-1.0\include\"
+[verbose] 	libusb.h
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-1.0\include\libusb-1.0\"
+[verbose] listed 0 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-1.0\lib\"
+[verbose] 	include
+[verbose] 	lib
+[verbose] 	license
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-win32\"
+[verbose] 	lusb0_usb.h
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-win32\include\"
+[verbose] 	vs
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-win32\lib\"
+[verbose] 	Win32
+[verbose] 	x64
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-win32\lib\vs\"
+[verbose] 	libusb.lib
+[verbose] 	libusbd.lib
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-win32\lib\vs\Win32\"
+[verbose] 	libusb.lib
+[verbose] 	libusbd.lib
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-win32\lib\vs\x64\"
+[verbose] 	AUTHORS.txt
+[verbose] 	COPYING_LGPL.txt
+[verbose] 	README.txt
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/libs\libusb-win32\license\"
+[verbose] 	extra
+[verbose] 	ofxBase3DVideo.h
+[verbose] 	ofxKinect.cpp
+[verbose] 	ofxKinect.h
+[verbose] listed 4 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/src\"
+[verbose] 	ofxKinectExtras.cpp
+[verbose] 	ofxKinectExtras.h
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect/src\extra\"
+[verbose] ofAddon: libs after exclusions 4
+[verbose] ofAddon: ../../../addons\ofxKinect/libs\libusb-win32\lib\vs\Win32\libusb.lib
+[verbose] ofAddon: ../../../addons\ofxKinect/libs\libusb-win32\lib\vs\Win32\libusbd.lib
+[verbose] ofAddon: ../../../addons\ofxKinect/libs\libusb-win32\lib\vs\x64\libusb.lib
+[verbose] ofAddon: ../../../addons\ofxKinect/libs\libusb-win32\lib\vs\x64\libusbd.lib
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\include
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\amd64
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\ia64
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\license
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\license\libusb-win32
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui audio\x86
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\amd64
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\ia64
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\license
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\license\libusb-win32
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui camera\x86
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\amd64
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\ia64
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\license
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\license\libusb-win32
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\inf\xbox nui motor\x86
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\libusb10emu
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\libusb10emu\libusb-1.0
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libfreenect\src
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libusb-1.0
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libusb-win32
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libusb-win32\include
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libusb-win32\lib
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libusb-win32\lib\vs
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libusb-win32\lib\vs\Win32
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libusb-win32\lib\vs\x64
+[verbose] adding addon include path: ../../../addons\ofxKinect/libs\libusb-win32\license
+[verbose] adding addon include path: ../../../addons\ofxKinect/src
+[verbose] adding addon include path: ../../../addons\ofxKinect/src\extra
+[verbose] adding addon include path: ..\..\..\addons/ofxKinect\libs/libfreenect/platform/windows
+[verbose] adding addon libs: ../../../addons\ofxKinect/libs\libusb-win32\lib\vs\Win32\libusb.lib
+[verbose] adding lib path ..\..\..\addons\ofxKinect\libs\libusb-win32\lib\vs\Win32
+[verbose] adding lib libusb.lib
+[verbose] adding addon libs: ../../../addons\ofxKinect/libs\libusb-win32\lib\vs\Win32\libusbd.lib
+[verbose] adding lib path ..\..\..\addons\ofxKinect\libs\libusb-win32\lib\vs\Win32
+[verbose] adding lib libusbd.lib
+[verbose] adding addon libs: ../../../addons\ofxKinect/libs\libusb-win32\lib\vs\x64\libusb.lib
+[verbose] adding lib path ..\..\..\addons\ofxKinect\libs\libusb-win32\lib\vs\x64
+[verbose] adding lib libusb.lib
+[verbose] adding addon libs: ../../../addons\ofxKinect/libs\libusb-win32\lib\vs\x64\libusbd.lib
+[verbose] adding lib path ..\..\..\addons\ofxKinect\libs\libusb-win32\lib\vs\x64
+[verbose] adding lib libusbd.lib
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/src\extra\ofxKinectExtras.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/src\extra\ofxKinectExtras.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/src\ofxBase3DVideo.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/src\ofxKinect.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/src\ofxKinect.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\include\libfreenect.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\include\libfreenect_audio.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\include\libfreenect_registration.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\failguard.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\failguard.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\libusb.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\libusbemu.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\libusbemu_internal.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\libusbemu_threads.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\libusb10emu\libusb-1.0\libusbemu_threads_win32.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\stdbool.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\platform\windows\unistd.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\src\audio.c
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\src\cameras.c
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\src\cameras.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\src\core.c
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\src\flags.c
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\src\flags.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\src\freenect_internal.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\src\keep_alive.c
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\src\keep_alive.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\src\loader.c
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\src\loader.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\src\registration.c
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\src\registration.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\src\tilt.c
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\src\usb_libusb10.c
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libfreenect\src\usb_libusb10.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libusb-1.0\include\libusb-1.0\libusb.h
+[verbose] adding addon srcFiles: ../../../addons\ofxKinect/libs\libusb-win32\include\lusb0_usb.h
+[verbose] adding addon srcFiles: ..\..\..\addons/ofxKinect\libs/libfreenect/platform/windows/libusb10emu/libusb-1.0/failguard.cpp
+[verbose] adding addon srcFiles: ..\..\..\addons/ofxKinect\libs/libfreenect/platform/windows/libusb10emu/libusb-1.0/libusbemu.cpp
+[verbose] adding addon dlls to bin: C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui audio\amd64\libusb0.dll
+[verbose] adding addon dlls to bin: C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui audio\ia64\libusb0.dll
+[verbose] adding addon dlls to bin: C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui audio\x86\libusb0_x86.dll
+[verbose] adding addon dlls to bin: C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui camera\amd64\libusb0.dll
+[verbose] adding addon dlls to bin: C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui camera\ia64\libusb0.dll
+[verbose] adding addon dlls to bin: C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui camera\x86\libusb0_x86.dll
+[verbose] adding addon dlls to bin: C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui motor\amd64\libusb0.dll
+[verbose] adding addon dlls to bin: C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui motor\ia64\libusb0.dll
+[verbose] adding addon dlls to bin: C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxKinect\libs\libfreenect\platform\windows\inf\xbox nui motor\x86\libusb0_x86.dll
+[verbose] returning path ../../../
+
+[verbose] in fromFS, trying src C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/src
+[verbose] 	ofxCvBlob.h
+[verbose] 	ofxCvColorImage.cpp
+[verbose] 	ofxCvColorImage.h
+[verbose] 	ofxCvConstants.h
+[verbose] 	ofxCvContourFinder.cpp
+[verbose] 	ofxCvContourFinder.h
+[verbose] 	ofxCvFloatImage.cpp
+[verbose] 	ofxCvFloatImage.h
+[verbose] 	ofxCvGrayscaleImage.cpp
+[verbose] 	ofxCvGrayscaleImage.h
+[verbose] 	ofxCvHaarFinder.cpp
+[verbose] 	ofxCvHaarFinder.h
+[verbose] 	ofxCvImage.cpp
+[verbose] 	ofxCvImage.h
+[verbose] 	ofxCvShortImage.cpp
+[verbose] 	ofxCvShortImage.h
+[verbose] 	ofxOpenCv.h
+[verbose] listed 17 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/src\"
+[verbose] 	opencv
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\"
+[verbose] 	include
+[verbose] 	lib
+[verbose] 	license
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\"
+[verbose] 	opencv
+[verbose] 	opencv2
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\"
+[verbose] 	cv.h
+[verbose] 	cv.hpp
+[verbose] 	cvaux.h
+[verbose] 	cvaux.hpp
+[verbose] 	cvwimage.h
+[verbose] 	cxcore.h
+[verbose] 	cxcore.hpp
+[verbose] 	cxeigen.hpp
+[verbose] 	cxmisc.h
+[verbose] 	highgui.h
+[verbose] 	ml.h
+[verbose] listed 11 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv\"
+[verbose] 	calib3d
+[verbose] 	contrib
+[verbose] 	core
+[verbose] 	features2d
+[verbose] 	flann
+[verbose] 	gpu
+[verbose] 	highgui
+[verbose] 	imgproc
+[verbose] 	legacy
+[verbose] 	ml
+[verbose] 	nonfree
+[verbose] 	objdetect
+[verbose] 	opencv.hpp
+[verbose] 	opencv_modules.hpp
+[verbose] 	photo
+[verbose] 	stitching
+[verbose] 	superres
+[verbose] 	ts
+[verbose] 	video
+[verbose] 	videostab
+[verbose] listed 20 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\"
+[verbose] 	calib3d.hpp
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\calib3d\"
+[verbose] 	contrib.hpp
+[verbose] 	detection_based_tracker.hpp
+[verbose] 	hybridtracker.hpp
+[verbose] 	openfabmap.hpp
+[verbose] 	retina.hpp
+[verbose] listed 5 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\contrib\"
+[verbose] 	affine.hpp
+[verbose] 	core.hpp
+[verbose] 	core_c.h
+[verbose] 	cuda_devptrs.hpp
+[verbose] 	devmem2d.hpp
+[verbose] 	eigen.hpp
+[verbose] 	gpumat.hpp
+[verbose] 	internal.hpp
+[verbose] 	mat.hpp
+[verbose] 	opengl_interop.hpp
+[verbose] 	opengl_interop_deprecated.hpp
+[verbose] 	operations.hpp
+[verbose] 	types_c.h
+[verbose] 	version.hpp
+[verbose] 	wimage.hpp
+[verbose] listed 15 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\core\"
+[verbose] 	features2d.hpp
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\features2d\"
+[verbose] 	allocator.h
+[verbose] 	all_indices.h
+[verbose] 	any.h
+[verbose] 	autotuned_index.h
+[verbose] 	composite_index.h
+[verbose] 	config.h
+[verbose] 	defines.h
+[verbose] 	dist.h
+[verbose] 	dummy.h
+[verbose] 	dynamic_bitset.h
+[verbose] 	flann.hpp
+[verbose] 	flann_base.hpp
+[verbose] 	general.h
+[verbose] 	ground_truth.h
+[verbose] 	hdf5.h
+[verbose] 	heap.h
+[verbose] 	hierarchical_clustering_index.h
+[verbose] 	index_testing.h
+[verbose] 	kdtree_index.h
+[verbose] 	kdtree_single_index.h
+[verbose] 	kmeans_index.h
+[verbose] 	linear_index.h
+[verbose] 	logger.h
+[verbose] 	lsh_index.h
+[verbose] 	lsh_table.h
+[verbose] 	matrix.h
+[verbose] 	miniflann.hpp
+[verbose] 	nn_index.h
+[verbose] 	object_factory.h
+[verbose] 	params.h
+[verbose] 	random.h
+[verbose] 	result_set.h
+[verbose] 	sampling.h
+[verbose] 	saving.h
+[verbose] 	simplex_downhill.h
+[verbose] 	timer.h
+[verbose] listed 36 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\flann\"
+[verbose] 	device
+[verbose] 	devmem2d.hpp
+[verbose] 	gpu.hpp
+[verbose] 	gpumat.hpp
+[verbose] 	stream_accessor.hpp
+[verbose] listed 5 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\"
+[verbose] 	block.hpp
+[verbose] 	border_interpolate.hpp
+[verbose] 	color.hpp
+[verbose] 	common.hpp
+[verbose] 	datamov_utils.hpp
+[verbose] 	detail
+[verbose] 	dynamic_smem.hpp
+[verbose] 	emulation.hpp
+[verbose] 	filters.hpp
+[verbose] 	funcattrib.hpp
+[verbose] 	functional.hpp
+[verbose] 	limits.hpp
+[verbose] 	reduce.hpp
+[verbose] 	saturate_cast.hpp
+[verbose] 	scan.hpp
+[verbose] 	simd_functions.hpp
+[verbose] 	static_check.hpp
+[verbose] 	transform.hpp
+[verbose] 	type_traits.hpp
+[verbose] 	utility.hpp
+[verbose] 	vec_distance.hpp
+[verbose] 	vec_math.hpp
+[verbose] 	vec_traits.hpp
+[verbose] 	warp.hpp
+[verbose] 	warp_reduce.hpp
+[verbose] 	warp_shuffle.hpp
+[verbose] listed 26 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\"
+[verbose] 	color_detail.hpp
+[verbose] 	reduce.hpp
+[verbose] 	reduce_key_val.hpp
+[verbose] 	transform_detail.hpp
+[verbose] 	type_traits_detail.hpp
+[verbose] 	vec_distance_detail.hpp
+[verbose] listed 6 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\detail\"
+[verbose] 	cap_ios.h
+[verbose] 	highgui.hpp
+[verbose] 	highgui_c.h
+[verbose] 	ios.h
+[verbose] listed 4 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\highgui\"
+[verbose] 	imgproc.hpp
+[verbose] 	imgproc_c.h
+[verbose] 	types_c.h
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\imgproc\"
+[verbose] 	blobtrack.hpp
+[verbose] 	compat.hpp
+[verbose] 	legacy.hpp
+[verbose] 	streams.hpp
+[verbose] listed 4 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\legacy\"
+[verbose] 	ml.hpp
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\ml\"
+[verbose] 	features2d.hpp
+[verbose] 	gpu.hpp
+[verbose] 	nonfree.hpp
+[verbose] 	ocl.hpp
+[verbose] listed 4 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\nonfree\"
+[verbose] 	objdetect.hpp
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\objdetect\"
+[verbose] 	photo.hpp
+[verbose] 	photo_c.h
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\photo\"
+[verbose] 	detail
+[verbose] 	stitcher.hpp
+[verbose] 	warpers.hpp
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\"
+[verbose] 	autocalib.hpp
+[verbose] 	blenders.hpp
+[verbose] 	camera.hpp
+[verbose] 	exposure_compensate.hpp
+[verbose] 	matchers.hpp
+[verbose] 	motion_estimators.hpp
+[verbose] 	seam_finders.hpp
+[verbose] 	util.hpp
+[verbose] 	util_inl.hpp
+[verbose] 	warpers.hpp
+[verbose] 	warpers_inl.hpp
+[verbose] listed 11 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\detail\"
+[verbose] 	optical_flow.hpp
+[verbose] 	superres.hpp
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\superres\"
+[verbose] 	gpu_perf.hpp
+[verbose] 	gpu_test.hpp
+[verbose] 	ts.hpp
+[verbose] 	ts_gtest.h
+[verbose] 	ts_perf.hpp
+[verbose] listed 5 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\ts\"
+[verbose] 	background_segm.hpp
+[verbose] 	tracking.hpp
+[verbose] 	video.hpp
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\video\"
+[verbose] 	deblurring.hpp
+[verbose] 	fast_marching.hpp
+[verbose] 	fast_marching_inl.hpp
+[verbose] 	frame_source.hpp
+[verbose] 	global_motion.hpp
+[verbose] 	inpainting.hpp
+[verbose] 	log.hpp
+[verbose] 	motion_stabilizing.hpp
+[verbose] 	optical_flow.hpp
+[verbose] 	stabilizer.hpp
+[verbose] 	videostab.hpp
+[verbose] listed 11 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\videostab\"
+[verbose] 	emscripten
+[verbose] 	vs
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\"
+[verbose] 	libopencv_calib3d.so
+[verbose] 	libopencv_contrib.so
+[verbose] 	libopencv_core.so
+[verbose] 	libopencv_features2d.so
+[verbose] 	libopencv_flann.so
+[verbose] 	libopencv_gpu.so
+[verbose] 	libopencv_imgproc.so
+[verbose] 	libopencv_legacy.so
+[verbose] 	libopencv_ml.so
+[verbose] 	libopencv_nonfree.so
+[verbose] 	libopencv_objdetect.so
+[verbose] 	libopencv_photo.so
+[verbose] 	libopencv_stitching.so
+[verbose] 	libopencv_superres.so
+[verbose] 	libopencv_video.so
+[verbose] 	libopencv_videostab.so
+[verbose] listed 16 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\emscripten\"
+[verbose] 	Win32
+[verbose] 	x64
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\vs\"
+[verbose] 	Debug
+[verbose] 	Release
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\vs\Win32\"
+[verbose] 	opencv_calib3d249d.lib
+[verbose] 	opencv_contrib249d.lib
+[verbose] 	opencv_core249d.lib
+[verbose] 	opencv_features2d249d.lib
+[verbose] 	opencv_flann249d.lib
+[verbose] 	opencv_gpu249d.lib
+[verbose] 	opencv_highgui249d.lib
+[verbose] 	opencv_imgproc249d.lib
+[verbose] 	opencv_legacy249d.lib
+[verbose] 	opencv_ml249d.lib
+[verbose] 	opencv_nonfree249d.lib
+[verbose] 	opencv_objdetect249d.lib
+[verbose] 	opencv_photo249d.lib
+[verbose] 	opencv_stitching249d.lib
+[verbose] 	opencv_superres249d.lib
+[verbose] 	opencv_ts249d.lib
+[verbose] 	opencv_video249d.lib
+[verbose] 	opencv_videostab249d.lib
+[verbose] 	zlibd.lib
+[verbose] listed 19 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\"
+[verbose] 	opencv_calib3d249.lib
+[verbose] 	opencv_contrib249.lib
+[verbose] 	opencv_core249.lib
+[verbose] 	opencv_features2d249.lib
+[verbose] 	opencv_flann249.lib
+[verbose] 	opencv_gpu249.lib
+[verbose] 	opencv_highgui249.lib
+[verbose] 	opencv_imgproc249.lib
+[verbose] 	opencv_legacy249.lib
+[verbose] 	opencv_ml249.lib
+[verbose] 	opencv_nonfree249.lib
+[verbose] 	opencv_objdetect249.lib
+[verbose] 	opencv_photo249.lib
+[verbose] 	opencv_stitching249.lib
+[verbose] 	opencv_superres249.lib
+[verbose] 	opencv_ts249.lib
+[verbose] 	opencv_video249.lib
+[verbose] 	opencv_videostab249.lib
+[verbose] 	zlib.lib
+[verbose] listed 19 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\"
+[verbose] 	Debug
+[verbose] 	Release
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\vs\x64\"
+[verbose] 	opencv_calib3d249d.lib
+[verbose] 	opencv_contrib249d.lib
+[verbose] 	opencv_core249d.lib
+[verbose] 	opencv_features2d249d.lib
+[verbose] 	opencv_flann249d.lib
+[verbose] 	opencv_gpu249d.lib
+[verbose] 	opencv_highgui249d.lib
+[verbose] 	opencv_imgproc249d.lib
+[verbose] 	opencv_legacy249d.lib
+[verbose] 	opencv_ml249d.lib
+[verbose] 	opencv_nonfree249d.lib
+[verbose] 	opencv_objdetect249d.lib
+[verbose] 	opencv_photo249d.lib
+[verbose] 	opencv_stitching249d.lib
+[verbose] 	opencv_superres249d.lib
+[verbose] 	opencv_ts249d.lib
+[verbose] 	opencv_video249d.lib
+[verbose] 	opencv_videostab249d.lib
+[verbose] 	zlibd.lib
+[verbose] listed 19 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\"
+[verbose] 	opencv_calib3d249.lib
+[verbose] 	opencv_contrib249.lib
+[verbose] 	opencv_core249.lib
+[verbose] 	opencv_features2d249.lib
+[verbose] 	opencv_flann249.lib
+[verbose] 	opencv_gpu249.lib
+[verbose] 	opencv_highgui249.lib
+[verbose] 	opencv_imgproc249.lib
+[verbose] 	opencv_legacy249.lib
+[verbose] 	opencv_ml249.lib
+[verbose] 	opencv_nonfree249.lib
+[verbose] 	opencv_objdetect249.lib
+[verbose] 	opencv_photo249.lib
+[verbose] 	opencv_stitching249.lib
+[verbose] 	opencv_superres249.lib
+[verbose] 	opencv_ts249.lib
+[verbose] 	opencv_video249.lib
+[verbose] 	opencv_videostab249.lib
+[verbose] 	zlib.lib
+[verbose] listed 19 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\"
+[verbose] 	LICENSE
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\license\"
+[verbose] 	opencv
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\"
+[verbose] 	include
+[verbose] 	lib
+[verbose] 	license
+[verbose] listed 3 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\"
+[verbose] 	opencv
+[verbose] 	opencv2
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\"
+[verbose] 	cv.h
+[verbose] 	cv.hpp
+[verbose] 	cvaux.h
+[verbose] 	cvaux.hpp
+[verbose] 	cvwimage.h
+[verbose] 	cxcore.h
+[verbose] 	cxcore.hpp
+[verbose] 	cxeigen.hpp
+[verbose] 	cxmisc.h
+[verbose] 	highgui.h
+[verbose] 	ml.h
+[verbose] listed 11 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv\"
+[verbose] 	calib3d
+[verbose] 	contrib
+[verbose] 	core
+[verbose] 	features2d
+[verbose] 	flann
+[verbose] 	gpu
+[verbose] 	highgui
+[verbose] 	imgproc
+[verbose] 	legacy
+[verbose] 	ml
+[verbose] 	nonfree
+[verbose] 	objdetect
+[verbose] 	opencv.hpp
+[verbose] 	opencv_modules.hpp
+[verbose] 	photo
+[verbose] 	stitching
+[verbose] 	superres
+[verbose] 	ts
+[verbose] 	video
+[verbose] 	videostab
+[verbose] listed 20 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\"
+[verbose] 	calib3d.hpp
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\calib3d\"
+[verbose] 	contrib.hpp
+[verbose] 	detection_based_tracker.hpp
+[verbose] 	hybridtracker.hpp
+[verbose] 	openfabmap.hpp
+[verbose] 	retina.hpp
+[verbose] listed 5 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\contrib\"
+[verbose] 	affine.hpp
+[verbose] 	core.hpp
+[verbose] 	core_c.h
+[verbose] 	cuda_devptrs.hpp
+[verbose] 	devmem2d.hpp
+[verbose] 	eigen.hpp
+[verbose] 	gpumat.hpp
+[verbose] 	internal.hpp
+[verbose] 	mat.hpp
+[verbose] 	opengl_interop.hpp
+[verbose] 	opengl_interop_deprecated.hpp
+[verbose] 	operations.hpp
+[verbose] 	types_c.h
+[verbose] 	version.hpp
+[verbose] 	wimage.hpp
+[verbose] listed 15 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\core\"
+[verbose] 	features2d.hpp
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\features2d\"
+[verbose] 	allocator.h
+[verbose] 	all_indices.h
+[verbose] 	any.h
+[verbose] 	autotuned_index.h
+[verbose] 	composite_index.h
+[verbose] 	config.h
+[verbose] 	defines.h
+[verbose] 	dist.h
+[verbose] 	dummy.h
+[verbose] 	dynamic_bitset.h
+[verbose] 	flann.hpp
+[verbose] 	flann_base.hpp
+[verbose] 	general.h
+[verbose] 	ground_truth.h
+[verbose] 	hdf5.h
+[verbose] 	heap.h
+[verbose] 	hierarchical_clustering_index.h
+[verbose] 	index_testing.h
+[verbose] 	kdtree_index.h
+[verbose] 	kdtree_single_index.h
+[verbose] 	kmeans_index.h
+[verbose] 	linear_index.h
+[verbose] 	logger.h
+[verbose] 	lsh_index.h
+[verbose] 	lsh_table.h
+[verbose] 	matrix.h
+[verbose] 	miniflann.hpp
+[verbose] 	nn_index.h
+[verbose] 	object_factory.h
+[verbose] 	params.h
+[verbose] 	random.h
+[verbose] 	result_set.h
+[verbose] 	sampling.h
+[verbose] 	saving.h
+[verbose] 	simplex_downhill.h
+[verbose] 	timer.h
+[verbose] listed 36 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\flann\"
+[verbose] 	device
+[verbose] 	devmem2d.hpp
+[verbose] 	gpu.hpp
+[verbose] 	gpumat.hpp
+[verbose] 	stream_accessor.hpp
+[verbose] listed 5 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\"
+[verbose] 	block.hpp
+[verbose] 	border_interpolate.hpp
+[verbose] 	color.hpp
+[verbose] 	common.hpp
+[verbose] 	datamov_utils.hpp
+[verbose] 	detail
+[verbose] 	dynamic_smem.hpp
+[verbose] 	emulation.hpp
+[verbose] 	filters.hpp
+[verbose] 	funcattrib.hpp
+[verbose] 	functional.hpp
+[verbose] 	limits.hpp
+[verbose] 	reduce.hpp
+[verbose] 	saturate_cast.hpp
+[verbose] 	scan.hpp
+[verbose] 	simd_functions.hpp
+[verbose] 	static_check.hpp
+[verbose] 	transform.hpp
+[verbose] 	type_traits.hpp
+[verbose] 	utility.hpp
+[verbose] 	vec_distance.hpp
+[verbose] 	vec_math.hpp
+[verbose] 	vec_traits.hpp
+[verbose] 	warp.hpp
+[verbose] 	warp_reduce.hpp
+[verbose] 	warp_shuffle.hpp
+[verbose] listed 26 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\"
+[verbose] 	color_detail.hpp
+[verbose] 	reduce.hpp
+[verbose] 	reduce_key_val.hpp
+[verbose] 	transform_detail.hpp
+[verbose] 	type_traits_detail.hpp
+[verbose] 	vec_distance_detail.hpp
+[verbose] listed 6 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu\device\detail\"
+[verbose] 	cap_ios.h
+[verbose] 	highgui.hpp
+[verbose] 	highgui_c.h
+[verbose] 	ios.h
+[verbose] listed 4 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\highgui\"
+[verbose] 	imgproc.hpp
+[verbose] 	imgproc_c.h
+[verbose] 	types_c.h
+[verbose] listed 3 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc\"
+[verbose] 	blobtrack.hpp
+[verbose] 	compat.hpp
+[verbose] 	legacy.hpp
+[verbose] 	streams.hpp
+[verbose] listed 4 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\legacy\"
+[verbose] 	ml.hpp
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\ml\"
+[verbose] 	features2d.hpp
+[verbose] 	gpu.hpp
+[verbose] 	nonfree.hpp
+[verbose] 	ocl.hpp
+[verbose] listed 4 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\nonfree\"
+[verbose] 	objdetect.hpp
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\objdetect\"
+[verbose] 	photo.hpp
+[verbose] 	photo_c.h
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\photo\"
+[verbose] 	detail
+[verbose] 	stitcher.hpp
+[verbose] 	warpers.hpp
+[verbose] listed 3 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\"
+[verbose] 	autocalib.hpp
+[verbose] 	blenders.hpp
+[verbose] 	camera.hpp
+[verbose] 	exposure_compensate.hpp
+[verbose] 	matchers.hpp
+[verbose] 	motion_estimators.hpp
+[verbose] 	seam_finders.hpp
+[verbose] 	util.hpp
+[verbose] 	util_inl.hpp
+[verbose] 	warpers.hpp
+[verbose] 	warpers_inl.hpp
+[verbose] listed 11 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\stitching\detail\"
+[verbose] 	optical_flow.hpp
+[verbose] 	superres.hpp
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\superres\"
+[verbose] 	gpu_perf.hpp
+[verbose] 	gpu_test.hpp
+[verbose] 	ts.hpp
+[verbose] 	ts_gtest.h
+[verbose] 	ts_perf.hpp
+[verbose] listed 5 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\ts\"
+[verbose] 	background_segm.hpp
+[verbose] 	tracking.hpp
+[verbose] 	video.hpp
+[verbose] listed 3 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\video\"
+[verbose] 	deblurring.hpp
+[verbose] 	fast_marching.hpp
+[verbose] 	fast_marching_inl.hpp
+[verbose] 	frame_source.hpp
+[verbose] 	global_motion.hpp
+[verbose] 	inpainting.hpp
+[verbose] 	log.hpp
+[verbose] 	motion_stabilizing.hpp
+[verbose] 	optical_flow.hpp
+[verbose] 	stabilizer.hpp
+[verbose] 	videostab.hpp
+[verbose] listed 11 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\include\opencv2\videostab\"
+[verbose] 	emscripten
+[verbose] 	vs
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\"
+[verbose] 	libopencv_calib3d.so
+[verbose] 	libopencv_contrib.so
+[verbose] 	libopencv_core.so
+[verbose] 	libopencv_features2d.so
+[verbose] 	libopencv_flann.so
+[verbose] 	libopencv_gpu.so
+[verbose] 	libopencv_imgproc.so
+[verbose] 	libopencv_legacy.so
+[verbose] 	libopencv_ml.so
+[verbose] 	libopencv_nonfree.so
+[verbose] 	libopencv_objdetect.so
+[verbose] 	libopencv_photo.so
+[verbose] 	libopencv_stitching.so
+[verbose] 	libopencv_superres.so
+[verbose] 	libopencv_video.so
+[verbose] 	libopencv_videostab.so
+[verbose] listed 16 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\emscripten\"
+[verbose] 	Win32
+[verbose] 	x64
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\"
+[verbose] 	Debug
+[verbose] 	Release
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\"
+[verbose] 	opencv_calib3d249d.lib
+[verbose] 	opencv_contrib249d.lib
+[verbose] 	opencv_core249d.lib
+[verbose] 	opencv_features2d249d.lib
+[verbose] 	opencv_flann249d.lib
+[verbose] 	opencv_gpu249d.lib
+[verbose] 	opencv_highgui249d.lib
+[verbose] 	opencv_imgproc249d.lib
+[verbose] 	opencv_legacy249d.lib
+[verbose] 	opencv_ml249d.lib
+[verbose] 	opencv_nonfree249d.lib
+[verbose] 	opencv_objdetect249d.lib
+[verbose] 	opencv_photo249d.lib
+[verbose] 	opencv_stitching249d.lib
+[verbose] 	opencv_superres249d.lib
+[verbose] 	opencv_ts249d.lib
+[verbose] 	opencv_video249d.lib
+[verbose] 	opencv_videostab249d.lib
+[verbose] 	zlibd.lib
+[verbose] listed 19 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug\"
+[verbose] 	opencv_calib3d249.lib
+[verbose] 	opencv_contrib249.lib
+[verbose] 	opencv_core249.lib
+[verbose] 	opencv_features2d249.lib
+[verbose] 	opencv_flann249.lib
+[verbose] 	opencv_gpu249.lib
+[verbose] 	opencv_highgui249.lib
+[verbose] 	opencv_imgproc249.lib
+[verbose] 	opencv_legacy249.lib
+[verbose] 	opencv_ml249.lib
+[verbose] 	opencv_nonfree249.lib
+[verbose] 	opencv_objdetect249.lib
+[verbose] 	opencv_photo249.lib
+[verbose] 	opencv_stitching249.lib
+[verbose] 	opencv_superres249.lib
+[verbose] 	opencv_ts249.lib
+[verbose] 	opencv_video249.lib
+[verbose] 	opencv_videostab249.lib
+[verbose] 	zlib.lib
+[verbose] listed 19 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release\"
+[verbose] 	Debug
+[verbose] 	Release
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\"
+[verbose] 	opencv_calib3d249d.lib
+[verbose] 	opencv_contrib249d.lib
+[verbose] 	opencv_core249d.lib
+[verbose] 	opencv_features2d249d.lib
+[verbose] 	opencv_flann249d.lib
+[verbose] 	opencv_gpu249d.lib
+[verbose] 	opencv_highgui249d.lib
+[verbose] 	opencv_imgproc249d.lib
+[verbose] 	opencv_legacy249d.lib
+[verbose] 	opencv_ml249d.lib
+[verbose] 	opencv_nonfree249d.lib
+[verbose] 	opencv_objdetect249d.lib
+[verbose] 	opencv_photo249d.lib
+[verbose] 	opencv_stitching249d.lib
+[verbose] 	opencv_superres249d.lib
+[verbose] 	opencv_ts249d.lib
+[verbose] 	opencv_video249d.lib
+[verbose] 	opencv_videostab249d.lib
+[verbose] 	zlibd.lib
+[verbose] listed 19 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug\"
+[verbose] 	opencv_calib3d249.lib
+[verbose] 	opencv_contrib249.lib
+[verbose] 	opencv_core249.lib
+[verbose] 	opencv_features2d249.lib
+[verbose] 	opencv_flann249.lib
+[verbose] 	opencv_gpu249.lib
+[verbose] 	opencv_highgui249.lib
+[verbose] 	opencv_imgproc249.lib
+[verbose] 	opencv_legacy249.lib
+[verbose] 	opencv_ml249.lib
+[verbose] 	opencv_nonfree249.lib
+[verbose] 	opencv_objdetect249.lib
+[verbose] 	opencv_photo249.lib
+[verbose] 	opencv_stitching249.lib
+[verbose] 	opencv_superres249.lib
+[verbose] 	opencv_ts249.lib
+[verbose] 	opencv_video249.lib
+[verbose] 	opencv_videostab249.lib
+[verbose] 	zlib.lib
+[verbose] listed 19 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release\"
+[verbose] 	LICENSE
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv\license\"
+[verbose] 	opencv
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\"
+[verbose] 	include
+[verbose] 	lib
+[verbose] 	license
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\"
+[verbose] 	opencv
+[verbose] 	opencv2
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\"
+[verbose] 	cv.h
+[verbose] 	cv.hpp
+[verbose] 	cvaux.h
+[verbose] 	cvaux.hpp
+[verbose] 	cvwimage.h
+[verbose] 	cxcore.h
+[verbose] 	cxcore.hpp
+[verbose] 	cxeigen.hpp
+[verbose] 	cxmisc.h
+[verbose] 	highgui.h
+[verbose] 	ml.h
+[verbose] listed 11 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv\"
+[verbose] 	calib3d
+[verbose] 	contrib
+[verbose] 	core
+[verbose] 	features2d
+[verbose] 	flann
+[verbose] 	gpu
+[verbose] 	highgui
+[verbose] 	imgproc
+[verbose] 	legacy
+[verbose] 	ml
+[verbose] 	nonfree
+[verbose] 	objdetect
+[verbose] 	opencv.hpp
+[verbose] 	opencv_modules.hpp
+[verbose] 	photo
+[verbose] 	stitching
+[verbose] 	superres
+[verbose] 	ts
+[verbose] 	video
+[verbose] 	videostab
+[verbose] listed 20 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\"
+[verbose] 	calib3d.hpp
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\calib3d\"
+[verbose] 	contrib.hpp
+[verbose] 	detection_based_tracker.hpp
+[verbose] 	hybridtracker.hpp
+[verbose] 	openfabmap.hpp
+[verbose] 	retina.hpp
+[verbose] listed 5 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\contrib\"
+[verbose] 	affine.hpp
+[verbose] 	core.hpp
+[verbose] 	core_c.h
+[verbose] 	cuda_devptrs.hpp
+[verbose] 	devmem2d.hpp
+[verbose] 	eigen.hpp
+[verbose] 	gpumat.hpp
+[verbose] 	internal.hpp
+[verbose] 	mat.hpp
+[verbose] 	opengl_interop.hpp
+[verbose] 	opengl_interop_deprecated.hpp
+[verbose] 	operations.hpp
+[verbose] 	types_c.h
+[verbose] 	version.hpp
+[verbose] 	wimage.hpp
+[verbose] listed 15 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\core\"
+[verbose] 	features2d.hpp
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\features2d\"
+[verbose] 	allocator.h
+[verbose] 	all_indices.h
+[verbose] 	any.h
+[verbose] 	autotuned_index.h
+[verbose] 	composite_index.h
+[verbose] 	config.h
+[verbose] 	defines.h
+[verbose] 	dist.h
+[verbose] 	dummy.h
+[verbose] 	dynamic_bitset.h
+[verbose] 	flann.hpp
+[verbose] 	flann_base.hpp
+[verbose] 	general.h
+[verbose] 	ground_truth.h
+[verbose] 	hdf5.h
+[verbose] 	heap.h
+[verbose] 	hierarchical_clustering_index.h
+[verbose] 	index_testing.h
+[verbose] 	kdtree_index.h
+[verbose] 	kdtree_single_index.h
+[verbose] 	kmeans_index.h
+[verbose] 	linear_index.h
+[verbose] 	logger.h
+[verbose] 	lsh_index.h
+[verbose] 	lsh_table.h
+[verbose] 	matrix.h
+[verbose] 	miniflann.hpp
+[verbose] 	nn_index.h
+[verbose] 	object_factory.h
+[verbose] 	params.h
+[verbose] 	random.h
+[verbose] 	result_set.h
+[verbose] 	sampling.h
+[verbose] 	saving.h
+[verbose] 	simplex_downhill.h
+[verbose] 	timer.h
+[verbose] listed 36 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\flann\"
+[verbose] 	device
+[verbose] 	devmem2d.hpp
+[verbose] 	gpu.hpp
+[verbose] 	gpumat.hpp
+[verbose] 	stream_accessor.hpp
+[verbose] listed 5 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\"
+[verbose] 	block.hpp
+[verbose] 	border_interpolate.hpp
+[verbose] 	color.hpp
+[verbose] 	common.hpp
+[verbose] 	datamov_utils.hpp
+[verbose] 	detail
+[verbose] 	dynamic_smem.hpp
+[verbose] 	emulation.hpp
+[verbose] 	filters.hpp
+[verbose] 	funcattrib.hpp
+[verbose] 	functional.hpp
+[verbose] 	limits.hpp
+[verbose] 	reduce.hpp
+[verbose] 	saturate_cast.hpp
+[verbose] 	scan.hpp
+[verbose] 	simd_functions.hpp
+[verbose] 	static_check.hpp
+[verbose] 	transform.hpp
+[verbose] 	type_traits.hpp
+[verbose] 	utility.hpp
+[verbose] 	vec_distance.hpp
+[verbose] 	vec_math.hpp
+[verbose] 	vec_traits.hpp
+[verbose] 	warp.hpp
+[verbose] 	warp_reduce.hpp
+[verbose] 	warp_shuffle.hpp
+[verbose] listed 26 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\"
+[verbose] 	color_detail.hpp
+[verbose] 	reduce.hpp
+[verbose] 	reduce_key_val.hpp
+[verbose] 	transform_detail.hpp
+[verbose] 	type_traits_detail.hpp
+[verbose] 	vec_distance_detail.hpp
+[verbose] listed 6 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\detail\"
+[verbose] 	cap_ios.h
+[verbose] 	highgui.hpp
+[verbose] 	highgui_c.h
+[verbose] 	ios.h
+[verbose] listed 4 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\highgui\"
+[verbose] 	imgproc.hpp
+[verbose] 	imgproc_c.h
+[verbose] 	types_c.h
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\imgproc\"
+[verbose] 	blobtrack.hpp
+[verbose] 	compat.hpp
+[verbose] 	legacy.hpp
+[verbose] 	streams.hpp
+[verbose] listed 4 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\legacy\"
+[verbose] 	ml.hpp
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\ml\"
+[verbose] 	features2d.hpp
+[verbose] 	gpu.hpp
+[verbose] 	nonfree.hpp
+[verbose] 	ocl.hpp
+[verbose] listed 4 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\nonfree\"
+[verbose] 	objdetect.hpp
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\objdetect\"
+[verbose] 	photo.hpp
+[verbose] 	photo_c.h
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\photo\"
+[verbose] 	detail
+[verbose] 	stitcher.hpp
+[verbose] 	warpers.hpp
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\"
+[verbose] 	autocalib.hpp
+[verbose] 	blenders.hpp
+[verbose] 	camera.hpp
+[verbose] 	exposure_compensate.hpp
+[verbose] 	matchers.hpp
+[verbose] 	motion_estimators.hpp
+[verbose] 	seam_finders.hpp
+[verbose] 	util.hpp
+[verbose] 	util_inl.hpp
+[verbose] 	warpers.hpp
+[verbose] 	warpers_inl.hpp
+[verbose] listed 11 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\detail\"
+[verbose] 	optical_flow.hpp
+[verbose] 	superres.hpp
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\superres\"
+[verbose] 	gpu_perf.hpp
+[verbose] 	gpu_test.hpp
+[verbose] 	ts.hpp
+[verbose] 	ts_gtest.h
+[verbose] 	ts_perf.hpp
+[verbose] listed 5 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\ts\"
+[verbose] 	background_segm.hpp
+[verbose] 	tracking.hpp
+[verbose] 	video.hpp
+[verbose] listed 3 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\video\"
+[verbose] 	deblurring.hpp
+[verbose] 	fast_marching.hpp
+[verbose] 	fast_marching_inl.hpp
+[verbose] 	frame_source.hpp
+[verbose] 	global_motion.hpp
+[verbose] 	inpainting.hpp
+[verbose] 	log.hpp
+[verbose] 	motion_stabilizing.hpp
+[verbose] 	optical_flow.hpp
+[verbose] 	stabilizer.hpp
+[verbose] 	videostab.hpp
+[verbose] listed 11 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\include\opencv2\videostab\"
+[verbose] 	emscripten
+[verbose] 	vs
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\"
+[verbose] 	libopencv_calib3d.so
+[verbose] 	libopencv_contrib.so
+[verbose] 	libopencv_core.so
+[verbose] 	libopencv_features2d.so
+[verbose] 	libopencv_flann.so
+[verbose] 	libopencv_gpu.so
+[verbose] 	libopencv_imgproc.so
+[verbose] 	libopencv_legacy.so
+[verbose] 	libopencv_ml.so
+[verbose] 	libopencv_nonfree.so
+[verbose] 	libopencv_objdetect.so
+[verbose] 	libopencv_photo.so
+[verbose] 	libopencv_stitching.so
+[verbose] 	libopencv_superres.so
+[verbose] 	libopencv_video.so
+[verbose] 	libopencv_videostab.so
+[verbose] listed 16 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\emscripten\"
+[verbose] 	Win32
+[verbose] 	x64
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\vs\"
+[verbose] 	Debug
+[verbose] 	Release
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\vs\Win32\"
+[verbose] 	opencv_calib3d249d.lib
+[verbose] 	opencv_contrib249d.lib
+[verbose] 	opencv_core249d.lib
+[verbose] 	opencv_features2d249d.lib
+[verbose] 	opencv_flann249d.lib
+[verbose] 	opencv_gpu249d.lib
+[verbose] 	opencv_highgui249d.lib
+[verbose] 	opencv_imgproc249d.lib
+[verbose] 	opencv_legacy249d.lib
+[verbose] 	opencv_ml249d.lib
+[verbose] 	opencv_nonfree249d.lib
+[verbose] 	opencv_objdetect249d.lib
+[verbose] 	opencv_photo249d.lib
+[verbose] 	opencv_stitching249d.lib
+[verbose] 	opencv_superres249d.lib
+[verbose] 	opencv_ts249d.lib
+[verbose] 	opencv_video249d.lib
+[verbose] 	opencv_videostab249d.lib
+[verbose] 	zlibd.lib
+[verbose] listed 19 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\"
+[verbose] 	opencv_calib3d249.lib
+[verbose] 	opencv_contrib249.lib
+[verbose] 	opencv_core249.lib
+[verbose] 	opencv_features2d249.lib
+[verbose] 	opencv_flann249.lib
+[verbose] 	opencv_gpu249.lib
+[verbose] 	opencv_highgui249.lib
+[verbose] 	opencv_imgproc249.lib
+[verbose] 	opencv_legacy249.lib
+[verbose] 	opencv_ml249.lib
+[verbose] 	opencv_nonfree249.lib
+[verbose] 	opencv_objdetect249.lib
+[verbose] 	opencv_photo249.lib
+[verbose] 	opencv_stitching249.lib
+[verbose] 	opencv_superres249.lib
+[verbose] 	opencv_ts249.lib
+[verbose] 	opencv_video249.lib
+[verbose] 	opencv_videostab249.lib
+[verbose] 	zlib.lib
+[verbose] listed 19 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\"
+[verbose] 	Debug
+[verbose] 	Release
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\vs\x64\"
+[verbose] 	opencv_calib3d249d.lib
+[verbose] 	opencv_contrib249d.lib
+[verbose] 	opencv_core249d.lib
+[verbose] 	opencv_features2d249d.lib
+[verbose] 	opencv_flann249d.lib
+[verbose] 	opencv_gpu249d.lib
+[verbose] 	opencv_highgui249d.lib
+[verbose] 	opencv_imgproc249d.lib
+[verbose] 	opencv_legacy249d.lib
+[verbose] 	opencv_ml249d.lib
+[verbose] 	opencv_nonfree249d.lib
+[verbose] 	opencv_objdetect249d.lib
+[verbose] 	opencv_photo249d.lib
+[verbose] 	opencv_stitching249d.lib
+[verbose] 	opencv_superres249d.lib
+[verbose] 	opencv_ts249d.lib
+[verbose] 	opencv_video249d.lib
+[verbose] 	opencv_videostab249d.lib
+[verbose] 	zlibd.lib
+[verbose] listed 19 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\"
+[verbose] 	opencv_calib3d249.lib
+[verbose] 	opencv_contrib249.lib
+[verbose] 	opencv_core249.lib
+[verbose] 	opencv_features2d249.lib
+[verbose] 	opencv_flann249.lib
+[verbose] 	opencv_gpu249.lib
+[verbose] 	opencv_highgui249.lib
+[verbose] 	opencv_imgproc249.lib
+[verbose] 	opencv_legacy249.lib
+[verbose] 	opencv_ml249.lib
+[verbose] 	opencv_nonfree249.lib
+[verbose] 	opencv_objdetect249.lib
+[verbose] 	opencv_photo249.lib
+[verbose] 	opencv_stitching249.lib
+[verbose] 	opencv_superres249.lib
+[verbose] 	opencv_ts249.lib
+[verbose] 	opencv_video249.lib
+[verbose] 	opencv_videostab249.lib
+[verbose] 	zlib.lib
+[verbose] listed 19 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\"
+[verbose] 	LICENSE
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/libs\opencv\license\"
+[verbose] 	ofxCvBlob.h
+[verbose] 	ofxCvColorImage.cpp
+[verbose] 	ofxCvColorImage.h
+[verbose] 	ofxCvConstants.h
+[verbose] 	ofxCvContourFinder.cpp
+[verbose] 	ofxCvContourFinder.h
+[verbose] 	ofxCvFloatImage.cpp
+[verbose] 	ofxCvFloatImage.h
+[verbose] 	ofxCvGrayscaleImage.cpp
+[verbose] 	ofxCvGrayscaleImage.h
+[verbose] 	ofxCvHaarFinder.cpp
+[verbose] 	ofxCvHaarFinder.h
+[verbose] 	ofxCvImage.cpp
+[verbose] 	ofxCvImage.h
+[verbose] 	ofxCvShortImage.cpp
+[verbose] 	ofxCvShortImage.h
+[verbose] 	ofxOpenCv.h
+[verbose] listed 17 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOpenCv/src\"
+[verbose] ofAddon: libs after exclusions 76
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_calib3d249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_contrib249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_core249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_features2d249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_flann249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_gpu249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_highgui249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_imgproc249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_legacy249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_ml249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_nonfree249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_objdetect249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_photo249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_stitching249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_superres249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_ts249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_video249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_videostab249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\zlibd.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_calib3d249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_contrib249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_core249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_features2d249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_flann249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_gpu249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_highgui249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_imgproc249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_legacy249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_ml249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_nonfree249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_objdetect249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_photo249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_stitching249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_superres249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_ts249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_video249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_videostab249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\zlib.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_calib3d249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_contrib249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_core249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_features2d249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_flann249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_gpu249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_highgui249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_imgproc249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_legacy249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_ml249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_nonfree249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_objdetect249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_photo249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_stitching249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_superres249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_ts249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_video249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_videostab249d.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\zlibd.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_calib3d249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_contrib249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_core249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_features2d249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_flann249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_gpu249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_highgui249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_imgproc249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_legacy249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_ml249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_nonfree249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_objdetect249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_photo249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_stitching249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_superres249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_ts249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_video249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_videostab249.lib
+[verbose] ofAddon: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\zlib.lib
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\calib3d
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\contrib
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\core
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\features2d
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\detail
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\highgui
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\imgproc
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\legacy
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\ml
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\nonfree
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\objdetect
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\photo
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\stitching
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\detail
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\superres
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\ts
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\video
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\videostab
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\lib
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\lib\emscripten
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\lib\vs
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/libs\opencv\license
+[verbose] adding addon include path: ../../../addons\ofxOpenCv/src
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_calib3d249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_calib3d249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_contrib249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_contrib249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_core249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_core249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_features2d249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_features2d249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_flann249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_flann249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_gpu249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_gpu249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_highgui249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_highgui249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_imgproc249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_imgproc249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_legacy249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_legacy249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_ml249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_ml249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_nonfree249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_nonfree249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_objdetect249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_objdetect249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_photo249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_photo249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_stitching249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_stitching249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_superres249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_superres249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_ts249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_ts249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_video249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_video249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\opencv_videostab249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib opencv_videostab249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Debug\zlibd.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Debug
+[verbose] adding lib zlibd.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_calib3d249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_calib3d249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_contrib249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_contrib249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_core249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_core249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_features2d249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_features2d249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_flann249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_flann249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_gpu249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_gpu249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_highgui249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_highgui249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_imgproc249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_imgproc249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_legacy249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_legacy249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_ml249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_ml249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_nonfree249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_nonfree249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_objdetect249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_objdetect249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_photo249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_photo249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_stitching249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_stitching249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_superres249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_superres249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_ts249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_ts249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_video249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_video249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\opencv_videostab249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib opencv_videostab249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\Win32\Release\zlib.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\Win32\Release
+[verbose] adding lib zlib.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_calib3d249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_calib3d249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_contrib249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_contrib249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_core249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_core249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_features2d249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_features2d249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_flann249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_flann249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_gpu249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_gpu249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_highgui249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_highgui249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_imgproc249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_imgproc249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_legacy249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_legacy249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_ml249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_ml249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_nonfree249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_nonfree249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_objdetect249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_objdetect249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_photo249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_photo249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_stitching249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_stitching249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_superres249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_superres249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_ts249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_ts249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_video249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_video249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\opencv_videostab249d.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib opencv_videostab249d.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Debug\zlibd.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Debug
+[verbose] adding lib zlibd.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_calib3d249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_calib3d249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_contrib249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_contrib249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_core249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_core249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_features2d249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_features2d249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_flann249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_flann249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_gpu249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_gpu249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_highgui249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_highgui249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_imgproc249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_imgproc249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_legacy249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_legacy249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_ml249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_ml249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_nonfree249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_nonfree249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_objdetect249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_objdetect249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_photo249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_photo249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_stitching249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_stitching249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_superres249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_superres249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_ts249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_ts249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_video249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_video249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\opencv_videostab249.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib opencv_videostab249.lib
+[verbose] adding addon libs: ../../../addons\ofxOpenCv/libs\opencv\lib\vs\x64\Release\zlib.lib
+[verbose] adding lib path ..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs\x64\Release
+[verbose] adding lib zlib.lib
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxCvBlob.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxCvColorImage.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxCvColorImage.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxCvConstants.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxCvContourFinder.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxCvContourFinder.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxCvFloatImage.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxCvFloatImage.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxCvGrayscaleImage.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxCvGrayscaleImage.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxCvHaarFinder.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxCvHaarFinder.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxCvImage.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxCvImage.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxCvShortImage.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxCvShortImage.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/src\ofxOpenCv.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv\cv.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv\cv.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv\cvaux.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv\cvaux.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv\cvwimage.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv\cxcore.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv\cxcore.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv\cxeigen.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv\cxmisc.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv\highgui.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv\ml.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\calib3d\calib3d.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\contrib\contrib.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\contrib\detection_based_tracker.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\contrib\hybridtracker.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\contrib\openfabmap.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\contrib\retina.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\core\affine.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\core\core.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\core\core_c.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\core\cuda_devptrs.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\core\devmem2d.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\core\eigen.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\core\gpumat.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\core\internal.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\core\mat.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\core\opengl_interop.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\core\opengl_interop_deprecated.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\core\operations.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\core\types_c.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\core\version.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\core\wimage.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\features2d\features2d.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\allocator.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\all_indices.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\any.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\autotuned_index.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\composite_index.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\config.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\defines.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\dist.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\dummy.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\dynamic_bitset.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\flann.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\flann_base.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\general.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\ground_truth.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\hdf5.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\heap.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\hierarchical_clustering_index.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\index_testing.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\kdtree_index.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\kdtree_single_index.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\kmeans_index.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\linear_index.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\logger.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\lsh_index.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\lsh_table.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\matrix.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\miniflann.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\nn_index.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\object_factory.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\params.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\random.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\result_set.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\sampling.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\saving.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\simplex_downhill.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\flann\timer.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\block.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\border_interpolate.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\color.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\common.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\datamov_utils.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\detail\color_detail.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\detail\reduce.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\detail\reduce_key_val.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\detail\transform_detail.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\detail\type_traits_detail.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\detail\vec_distance_detail.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\dynamic_smem.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\emulation.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\filters.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\funcattrib.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\functional.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\limits.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\reduce.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\saturate_cast.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\scan.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\simd_functions.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\static_check.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\transform.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\type_traits.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\utility.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\vec_distance.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\vec_math.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\vec_traits.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\warp.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\warp_reduce.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\device\warp_shuffle.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\devmem2d.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\gpu.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\gpumat.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\gpu\stream_accessor.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\highgui\cap_ios.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\highgui\highgui.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\highgui\highgui_c.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\highgui\ios.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\imgproc\imgproc.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\imgproc\imgproc_c.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\imgproc\types_c.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\legacy\blobtrack.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\legacy\compat.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\legacy\legacy.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\legacy\streams.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\ml\ml.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\nonfree\features2d.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\nonfree\gpu.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\nonfree\nonfree.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\nonfree\ocl.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\objdetect\objdetect.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\opencv.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\opencv_modules.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\photo\photo.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\photo\photo_c.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\detail\autocalib.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\detail\blenders.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\detail\camera.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\detail\exposure_compensate.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\detail\matchers.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\detail\motion_estimators.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\detail\seam_finders.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\detail\util.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\detail\util_inl.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\detail\warpers.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\detail\warpers_inl.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\stitcher.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\stitching\warpers.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\superres\optical_flow.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\superres\superres.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\ts\gpu_perf.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\ts\gpu_test.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\ts\ts.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\ts\ts_gtest.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\ts\ts_perf.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\video\background_segm.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\video\tracking.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\video\video.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\videostab\deblurring.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\videostab\fast_marching.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\videostab\fast_marching_inl.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\videostab\frame_source.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\videostab\global_motion.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\videostab\inpainting.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\videostab\log.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\videostab\motion_stabilizing.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\videostab\optical_flow.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\videostab\stabilizer.hpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOpenCv/libs\opencv\include\opencv2\videostab\videostab.hpp
+[verbose] returning path ../../../
+
+[verbose] in fromFS, trying src C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/src
+[verbose] 	ofxOsc.h
+[verbose] 	ofxOscArg.h
+[verbose] 	ofxOscBundle.cpp
+[verbose] 	ofxOscBundle.h
+[verbose] 	ofxOscMessage.cpp
+[verbose] 	ofxOscMessage.h
+[verbose] 	ofxOscParameterSync.cpp
+[verbose] 	ofxOscParameterSync.h
+[verbose] 	ofxOscReceiver.cpp
+[verbose] 	ofxOscReceiver.h
+[verbose] 	ofxOscSender.cpp
+[verbose] 	ofxOscSender.h
+[verbose] listed 12 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/src\"
+[verbose] 	oscpack
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/libs\"
+[verbose] 	src
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/libs\oscpack\"
+[verbose] 	ip
+[verbose] 	osc
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/libs\oscpack\src\"
+[verbose] 	IpEndpointName.cpp
+[verbose] 	IpEndpointName.h
+[verbose] 	NetworkingUtils.h
+[verbose] 	PacketListener.h
+[verbose] 	posix
+[verbose] 	TimerListener.h
+[verbose] 	UdpSocket.h
+[verbose] 	win32
+[verbose] listed 8 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/libs\oscpack\src\ip\"
+[verbose] 	NetworkingUtils.cpp
+[verbose] 	UdpSocket.cpp
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/libs\oscpack\src\ip\posix\"
+[verbose] 	NetworkingUtils.cpp
+[verbose] 	UdpSocket.cpp
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/libs\oscpack\src\ip\win32\"
+[verbose] 	MessageMappingOscPacketListener.h
+[verbose] 	OscException.h
+[verbose] 	OscHostEndianness.h
+[verbose] 	OscOutboundPacketStream.cpp
+[verbose] 	OscOutboundPacketStream.h
+[verbose] 	OscPacketListener.h
+[verbose] 	OscPrintReceivedElements.cpp
+[verbose] 	OscPrintReceivedElements.h
+[verbose] 	OscReceivedElements.cpp
+[verbose] 	OscReceivedElements.h
+[verbose] 	OscTypes.cpp
+[verbose] 	OscTypes.h
+[verbose] listed 12 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/libs\oscpack\src\osc\"
+[verbose] 	oscpack
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/libs\"
+[verbose] 	src
+[verbose] listed 1 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\"
+[verbose] 	ip
+[verbose] 	osc
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\"
+[verbose] 	IpEndpointName.cpp
+[verbose] 	IpEndpointName.h
+[verbose] 	NetworkingUtils.h
+[verbose] 	PacketListener.h
+[verbose] 	posix
+[verbose] 	TimerListener.h
+[verbose] 	UdpSocket.h
+[verbose] 	win32
+[verbose] listed 8 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\"
+[verbose] 	NetworkingUtils.cpp
+[verbose] 	UdpSocket.cpp
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix\"
+[verbose] 	NetworkingUtils.cpp
+[verbose] 	UdpSocket.cpp
+[verbose] listed 2 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32\"
+[verbose] 	MessageMappingOscPacketListener.h
+[verbose] 	OscException.h
+[verbose] 	OscHostEndianness.h
+[verbose] 	OscOutboundPacketStream.cpp
+[verbose] 	OscOutboundPacketStream.h
+[verbose] 	OscPacketListener.h
+[verbose] 	OscPrintReceivedElements.cpp
+[verbose] 	OscPrintReceivedElements.h
+[verbose] 	OscReceivedElements.cpp
+[verbose] 	OscReceivedElements.h
+[verbose] 	OscTypes.cpp
+[verbose] 	OscTypes.h
+[verbose] listed 12 files in "C:/Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc\"
+[verbose] 	oscpack
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/libs\"
+[verbose] 	src
+[verbose] listed 1 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/libs\oscpack\"
+[verbose] 	ip
+[verbose] 	osc
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/libs\oscpack\src\"
+[verbose] 	IpEndpointName.cpp
+[verbose] 	IpEndpointName.h
+[verbose] 	NetworkingUtils.h
+[verbose] 	PacketListener.h
+[verbose] 	posix
+[verbose] 	TimerListener.h
+[verbose] 	UdpSocket.h
+[verbose] 	win32
+[verbose] listed 8 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/libs\oscpack\src\ip\"
+[verbose] 	NetworkingUtils.cpp
+[verbose] 	UdpSocket.cpp
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/libs\oscpack\src\ip\posix\"
+[verbose] 	NetworkingUtils.cpp
+[verbose] 	UdpSocket.cpp
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/libs\oscpack\src\ip\win32\"
+[verbose] 	MessageMappingOscPacketListener.h
+[verbose] 	OscException.h
+[verbose] 	OscHostEndianness.h
+[verbose] 	OscOutboundPacketStream.cpp
+[verbose] 	OscOutboundPacketStream.h
+[verbose] 	OscPacketListener.h
+[verbose] 	OscPrintReceivedElements.cpp
+[verbose] 	OscPrintReceivedElements.h
+[verbose] 	OscReceivedElements.cpp
+[verbose] 	OscReceivedElements.h
+[verbose] 	OscTypes.cpp
+[verbose] 	OscTypes.h
+[verbose] listed 12 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/libs\oscpack\src\osc\"
+[verbose] 	ofxOsc.h
+[verbose] 	ofxOscArg.h
+[verbose] 	ofxOscBundle.cpp
+[verbose] 	ofxOscBundle.h
+[verbose] 	ofxOscMessage.cpp
+[verbose] 	ofxOscMessage.h
+[verbose] 	ofxOscParameterSync.cpp
+[verbose] 	ofxOscParameterSync.h
+[verbose] 	ofxOscReceiver.cpp
+[verbose] 	ofxOscReceiver.h
+[verbose] 	ofxOscSender.cpp
+[verbose] 	ofxOscSender.h
+[verbose] listed 12 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxOsc/src\"
+[verbose] ofAddon: libs after exclusions 0
+[verbose] adding addon include path: ../../../addons\ofxOsc/libs
+[verbose] adding addon include path: ../../../addons\ofxOsc/libs\oscpack
+[verbose] adding addon include path: ../../../addons\ofxOsc/libs\oscpack\src
+[verbose] adding addon include path: ../../../addons\ofxOsc/libs\oscpack\src\ip
+[verbose] adding addon include path: ../../../addons\ofxOsc/libs\oscpack\src\ip\posix
+[verbose] adding addon include path: ../../../addons\ofxOsc/libs\oscpack\src\ip\win32
+[verbose] adding addon include path: ../../../addons\ofxOsc/libs\oscpack\src\osc
+[verbose] adding addon include path: ../../../addons\ofxOsc/src
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/src\ofxOsc.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/src\ofxOscArg.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/src\ofxOscBundle.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/src\ofxOscBundle.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/src\ofxOscMessage.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/src\ofxOscMessage.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/src\ofxOscParameterSync.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/src\ofxOscParameterSync.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/src\ofxOscReceiver.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/src\ofxOscReceiver.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/src\ofxOscSender.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/src\ofxOscSender.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\ip\IpEndpointName.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\ip\IpEndpointName.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\ip\NetworkingUtils.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\ip\PacketListener.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\ip\TimerListener.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\ip\UdpSocket.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\ip\win32\NetworkingUtils.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\ip\win32\UdpSocket.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\osc\MessageMappingOscPacketListener.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\osc\OscException.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\osc\OscHostEndianness.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\osc\OscOutboundPacketStream.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\osc\OscOutboundPacketStream.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\osc\OscPacketListener.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\osc\OscPrintReceivedElements.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\osc\OscPrintReceivedElements.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\osc\OscReceivedElements.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\osc\OscReceivedElements.h
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\osc\OscTypes.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxOsc/libs\oscpack\src\osc\OscTypes.h
+[verbose] returning path ../../../
+
+[verbose] in fromFS, trying src C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxXmlSettings/src
+[verbose] 	ofxXmlSettings.cpp
+[verbose] 	ofxXmlSettings.h
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxXmlSettings/src\"
+[verbose] 	tinyxml.cpp
+[verbose] 	tinyxml.h
+[verbose] 	tinyxmlerror.cpp
+[verbose] 	tinyxmlparser.cpp
+[verbose] listed 4 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxXmlSettings/libs\"
+[verbose] 	tinyxml.cpp
+[verbose] 	tinyxml.h
+[verbose] 	tinyxmlerror.cpp
+[verbose] 	tinyxmlparser.cpp
+[verbose] listed 4 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxXmlSettings/libs\"
+[verbose] 	tinyxml.cpp
+[verbose] 	tinyxml.h
+[verbose] 	tinyxmlerror.cpp
+[verbose] 	tinyxmlparser.cpp
+[verbose] listed 4 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxXmlSettings/libs\"
+[verbose] 	ofxXmlSettings.cpp
+[verbose] 	ofxXmlSettings.h
+[verbose] listed 2 files in "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\addons\ofxXmlSettings/src\"
+[verbose] adding addon include path: ../../../addons\ofxXmlSettings/libs
+[verbose] adding addon include path: ../../../addons\ofxXmlSettings/src
+[verbose] adding addon srcFiles: ../../../addons\ofxXmlSettings/src\ofxXmlSettings.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxXmlSettings/src\ofxXmlSettings.h
+[verbose] adding addon srcFiles: ../../../addons\ofxXmlSettings/libs\tinyxml.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxXmlSettings/libs\tinyxml.h
+[verbose] adding addon srcFiles: ../../../addons\ofxXmlSettings/libs\tinyxmlerror.cpp
+[verbose] adding addon srcFiles: ../../../addons\ofxXmlSettings/libs\tinyxmlparser.cpp
+[notice ] saving addons.make
+[notice ] project updated! 
+[notice ] -----------------------------------------------
+
+
+1 project updated [notice ] in -8879.77 seconds
+
+
+
+
+
+(command used: "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\projectGenerator-vs\resources\app\app\projectGenerator" -v -o"C:\Users\lovid\Desktop\of_v0.9.8_vs_release" -a"ofxGui,ofxKinect,ofxOpenCv,ofxOsc,ofxXmlSettings" -p"vs" "C:\Users\lovid\Desktop\of_v0.9.8_vs_release\apps\LoVid-ReactionBubble-RAW-oF2\LoVid_ReactionBubble-RAW")
+
+

@@ -6,6 +6,7 @@
 #include "Worm.h"
 
 #include "ofxKinect.h"
+#include "ofxOpenCv.h"
 
 class ofApp : public ofBaseApp{
 
@@ -23,6 +24,9 @@ class ofApp : public ofBaseApp{
 
 	const float sensorTimeout = 10.0; // 10s
 
+	int nearThreshold = 150;
+	int farThreshold = 100;
+
 	ofRectangle wormBounds;
 
 
@@ -34,6 +38,8 @@ class ofApp : public ofBaseApp{
 
 		void beamBreak(int beamIdx, Beam& beam) {} // trigger or switch video
 		void capSense(int capIdx, Cap& cap); // adjust video
+
+		void findPeople();
 
 		void keyPressed(int key);
 		void keyReleased(int key);
@@ -83,5 +89,15 @@ class ofApp : public ofBaseApp{
 
 		ofxKinect kinect1, kinect2;
 
-		vector<ofVec3f> people;
+		vector<ofVec3f> people1, people2;
+
+		// - kinect open cv
+		//ofxCvColorImage colorImg1, colorImg2; // color depth images
+
+		ofxCvGrayscaleImage grayImg1, grayImg2; // grayscale depth images
+		ofxCvGrayscaleImage threshNImg1, threshNImg2; // the near thresholded images
+		ofxCvGrayscaleImage threshFImg1, threshFImg2; // the far thresholded images
+
+		ofxCvContourFinder contourFinder1, contourFinder2;
+
 };

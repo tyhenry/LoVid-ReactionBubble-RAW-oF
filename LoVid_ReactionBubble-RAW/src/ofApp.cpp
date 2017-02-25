@@ -40,9 +40,8 @@ void ofApp::setup() {
 	ofVec3f p = wormBounds.getCenter();
 	p.z = -700;
 	topCam.setPosition(p);
-	topCam.lookAt(wormBounds.getCenter(), ofVec3f(0,-1,0));
+	topCam.lookAt(wormBounds.getCenter(), ofVec3f(0,-1,0)); // +y should be bottom screen
 
-	//topCam.rotate(180,ofVec3f(0,0,1));
 
 	overCam.setTarget(wormBounds.getCenter());
 
@@ -92,6 +91,12 @@ void ofApp::setup() {
 	kinect2.init();
 	kinect2.open();
 
+	// open cv
+	ofVec2f k(kinect1.width, kinect1.height);
+	grayImg1.allocate(k.x, k.y);		grayImg2.allocate(k.x, k.y);
+	threshNImg1.allocate(k.x, k.y);		threshNImg2.allocate(k.x, k.y);
+	threshFImg1.allocate(k.x, k.y);		threshFImg2.allocate(k.x, k.y);
+
 }
 
 //--------------------------------------------------------------
@@ -100,6 +105,7 @@ void ofApp::update() {
 	for (auto& vid : walkingVids) {
 		vid.update();
 	}
+	skinVid.update();
 	synthVid.update();
 
 	int nMsgs = sensors.update();
@@ -133,13 +139,23 @@ void ofApp::update() {
 	kinect1.update();
 	kinect2.update();
 
+	findPeople();
+
 	// worms
 
 	for (auto& worm : worms) {
 		worm.resetForces();
 		worm.flock(worms);
-		ofVec2f seek = worm.seek(ofVec2f(ofRandom(640,720), ofRandom(350,400)), 2000);
-		worm.applyForce(seek); // seek mouse
+		//ofVec2f seek = worm.seek(ofVec2f(ofRandom(640,720), ofRandom(350,400)), 2000);
+		//worm.applyForce(seek); // seek mouse
+		for (auto& p : people1) {
+			ofVec2f seek = worm.seek(p, 1366);
+			worm.applyForce(seek * ofRandom(-.5,1.));
+		}
+		for (auto& p : people2) {
+			ofVec2f seek = worm.seek(p, 1366);
+			worm.applyForce(seek * ofRandom(-.5,1.));
+		}
 		worm.update();
 	}
 
@@ -159,15 +175,16 @@ void ofApp::draw() {
 	synthVid.draw(displays[0].getBounds());
 
 	cams[0].begin(displays[0].getBounds());
-	//ofEnableDepthTest();
+	ofEnableDepthTest();
 
 	for (auto& worm : worms) {
 		ofSetColor(255);
-		worm.draw();
+		skinVid.bind();
 		worm.drawMesh();
+		skinVid.unbind();
 	}
 
-	//ofDisableDepthTest();
+	ofDisableDepthTest();
 	cams[0].end();
 
 	displays[0].end();
@@ -178,15 +195,16 @@ void ofApp::draw() {
 	//displays[0].draw();
 
 	cams[1].begin(displays[1].getBounds());
-	//ofEnableDepthTest();
+	ofEnableDepthTest();
 
 	for (auto& worm : worms) {
 		ofSetColor(255);
-		worm.draw();
+		skinVid.bind();
 		worm.drawMesh();
+		skinVid.unbind();
 	}
 
-	//ofDisableDepthTest();
+	ofDisableDepthTest();
 	cams[1].end();
 
 	displays[1].end();
@@ -196,15 +214,16 @@ void ofApp::draw() {
 	//displays[1].draw();
 
 	cams[2].begin(displays[2].getBounds());
-	//ofEnableDepthTest();
+	ofEnableDepthTest();
 
 	for (auto& worm : worms) {
 		ofSetColor(255);
-		worm.draw();
+		skinVid.bind();
 		worm.drawMesh();
+		skinVid.unbind();
 	}
 
-	//ofDisableDepthTest();
+	ofDisableDepthTest();
 	cams[2].end();
 	displays[2].end();
 
@@ -220,6 +239,7 @@ void ofApp::draw() {
 	topDisplay.begin();
 	ofClear(ofColor::darkGrey);
 	topCam.begin(topDisplay.getBounds());
+	ofEnableDepthTest();
 
 	for (auto& worm : worms) {
 		ofSetColor(255);
@@ -228,17 +248,17 @@ void ofApp::draw() {
 	}
 
 	ofSetColor(ofColor::red); 
-	ofDrawSphere(cams[0].getGlobalPosition() + cams[0].getLookAtDir()*50, 10);
+	ofDrawSphere(cams[0].getGlobalPosition() + cams[0].getLookAtDir() * 50, 3);
 	cams[0].draw();
 	ofSetColor(ofColor::green); 
-	ofDrawSphere(cams[1].getGlobalPosition() + cams[1].getLookAtDir() * 50, 10);
+	ofDrawSphere(cams[1].getGlobalPosition() + cams[1].getLookAtDir() * 50, 3);
 	cams[1].draw();
 	ofSetColor(ofColor::blue); 
-	ofDrawSphere(cams[2].getGlobalPosition() + cams[2].getLookAtDir() * 50, 10);
+	ofDrawSphere(cams[2].getGlobalPosition() + cams[2].getLookAtDir() * 50, 3);
 	cams[2].draw();
 
 	ofSetColor(255);
-	ofDrawSphere(10);
+	ofDrawSphere(3);
 
 	ofPushMatrix();
 	ofTranslate(cams[0].getGlobalPosition());
@@ -247,10 +267,20 @@ void ofApp::draw() {
 
 	ofDrawAxis(100);
 
+	ofDisableDepthTest();
 	topCam.end();
 
-	kinect1.draw(0,0,320,240);
-	kinect2.draw(320,0,320,240);
+	ofSetColor(255,50);
+	grayImg1.draw(0,0,320,240);
+	contourFinder1.draw(0,0,320,240);
+	grayImg2.draw(320,0,320,240);
+	contourFinder2.draw(320,0,320,240);
+
+	ofSetColor(ofColor::coral);
+	for (auto& p : people1) { ofDrawSphere(p, 10); }
+	for (auto& p : people2) { ofDrawSphere(p, 10); }
+
+	ofSetColor(255);
 	topDisplay.end();
 	topDisplay.draw(0,0);
 	
@@ -281,6 +311,95 @@ void ofApp::capSense(int capIdx, Cap& cap) {
 	//}
 }
 
+
+//--------------------------------------------------------------
+
+void ofApp::findPeople() {
+
+
+	if (kinect1.isFrameNew()) {
+
+		// load grayscale depth image from the kinect source
+		grayImg1.setFromPixels(kinect1.getDepthPixels());
+
+		// we do two thresholds - one for the far plane and one for the near plane
+		// we then do a cvAnd to get the pixels which are a union of the two thresholds
+		threshNImg1 = grayImg1;
+		threshFImg1 = grayImg1;		
+
+		threshNImg1.threshold(nearThreshold, true);
+		threshFImg1.threshold(farThreshold);
+
+		cvAnd(threshNImg1.getCvImage(), threshFImg1.getCvImage(), grayImg1.getCvImage(), NULL);
+
+		// update the cv images
+		grayImg1.flagImageChanged();
+
+		// find contours which are between the size of 20 pixels and 1/3 the w*h pixels.
+		// also, find holes is set to true so we will get interior contours as well....
+		contourFinder1.findContours(grayImg1, 500, 20000, 20, false);
+
+		people1.clear();
+
+		float mapH = wormBounds.height * 0.5;
+		float mapW = mapH / 1.333;
+
+		float xOffset = mapW * 3;
+		float yOffset = mapH * 0.5;
+
+		for (int i=0; i<contourFinder1.nBlobs; i++){
+			auto& blob = contourFinder1.blobs[i];
+			ofVec2f bPos = blob.centroid;
+			ofVec2f pos;
+			pos.x = xOffset + ofMap(bPos.y, 0, 640, 0, mapW, true);
+			pos.y = yOffset + ofMap(bPos.x, 0, 480, mapH, 0, true);
+			people1.push_back(pos);
+		}
+
+	}
+
+	if (kinect2.isFrameNew()) {
+		// load grayscale depth image from the kinect source
+		grayImg2.setFromPixels(kinect2.getDepthPixels());
+
+		// we do two thresholds - one for the far plane and one for the near plane
+		// we then do a cvAnd to get the pixels which are a union of the two thresholds
+		threshNImg2 = grayImg2;
+		threshFImg2 = grayImg2;
+
+		threshNImg2.threshold(nearThreshold, true);
+		threshFImg2.threshold(farThreshold);
+
+		cvAnd(threshNImg2.getCvImage(), threshFImg2.getCvImage(), grayImg2.getCvImage(), NULL);
+
+		// update the cv images
+		grayImg2.flagImageChanged();
+
+		// find contours which are between the size of 20 pixels and 1/3 the w*h pixels.
+		// also, find holes is set to true so we will get interior contours as well....
+		contourFinder2.findContours(grayImg2, 500, 20000, 20, false);
+
+		people2.clear();
+
+		float mapH = wormBounds.height * 0.5;
+		float mapW = mapH / 1.333;
+
+		float xOffset = mapW;
+		float yOffset = mapH*0.5;
+
+		for (int i = 0; i<contourFinder2.nBlobs; i++) {
+			auto& blob = contourFinder2.blobs[i];
+			ofVec2f bPos = blob.centroid;
+			ofVec2f pos;
+			pos.x = xOffset + ofMap(bPos.y, 0, 640, 0, mapW, true);
+			pos.y = yOffset + ofMap(bPos.x, 0, 480, mapH, 0, true);
+			people2.push_back(pos);
+		}
+	}
+}
+
+
+
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key) {
 
@@ -309,7 +428,7 @@ void ofApp::mousePressed(int x, int y, int button) {
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button) {
 
-	worms.push_back(Worm(wormBounds));
+	worms.push_back(Worm(wormBounds, wormBounds.getCenter(), 3., 0.5, 0.05));
 	cout << "# worms: " << worms.size() << endl;
 }
 

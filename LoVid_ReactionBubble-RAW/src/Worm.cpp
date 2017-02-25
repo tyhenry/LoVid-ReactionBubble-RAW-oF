@@ -10,7 +10,7 @@ Worm::Worm()
 	radius = 3.;
 
 	maxSpeed = 1.5;
-	maxForce = .05;
+	maxForce = 0.05;
 
 	timeOffset = ofRandom(100);
 	
@@ -78,9 +78,10 @@ void Worm::drawSpine()
 	spine.draw();
 }
 
-void Worm::drawMesh()
+void Worm::drawMesh(bool wireframe)
 {
-	mesh.drawWireframe();
+	if (wireframe) mesh.drawWireframe();
+	else mesh.drawFaces();
 }
 
 void Worm::avoidEdges() {
@@ -298,11 +299,26 @@ void Worm::makeMesh()
 		mesh.addVertex(pt1);
 		mesh.addVertex(pt2);
 		mesh.addVertex(pt3);
+
+	}
+
+	// tex coords
+	int nVerts = mesh.getNumVertices();
+	for (int i = 0; i < nVerts; i += 3) {
+
+		ofVec2f t1, t2, t3;
+		float x = (float)i / (float)nVerts;
+		t1.set(x, 0.0); // y?
+		t2.set(x, 0.05);
+		t3.set(x, 0.1);
+		mesh.addTexCoord(t1);
+		mesh.addTexCoord(t2);
+		mesh.addTexCoord(t3);
 	}
 
 	// indices
 
-	for (int i = 0; i+2 < mesh.getVertices().size(); i += 3) {
+	for (int i = 0; i+2 < nVerts; i += 3) {
 		// face
 		//mesh.addTriangle(i, i+1, i+2);
 		// this to prev face

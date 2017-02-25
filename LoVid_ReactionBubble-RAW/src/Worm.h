@@ -18,7 +18,7 @@ public:
 	bool update(); // move, wriggle
 	void draw(); //
 	void drawSpine();
-	void drawMesh();
+	void drawMesh(bool wireframe = false);
 
 	void avoidEdges();
 	void wrapEdges();
