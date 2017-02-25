@@ -69,6 +69,7 @@ class ofApp : public ofBaseApp{
 		// videos
 
 		vector<ofVideoPlayer> walkingVids;
+		vector<int> walkingVidPlaces;
 
 		ofVideoPlayer synthVid;
 		int synthAlpha = 0;
@@ -99,5 +100,7 @@ class ofApp : public ofBaseApp{
 		ofxCvGrayscaleImage threshFImg1, threshFImg2; // the far thresholded images
 
 		ofxCvContourFinder contourFinder1, contourFinder2;
+
+		bool drawTop = false;
 
 };

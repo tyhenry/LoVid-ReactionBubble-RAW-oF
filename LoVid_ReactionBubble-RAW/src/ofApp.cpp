@@ -25,6 +25,8 @@ void ofApp::setup() {
 		displays.push_back(Display(1366, 768));
 	}
 
+	displays.push_back(Display(ofW,ofH)); // full screen
+
 	// setup cameras
 
 	for (int i = 0; i < 3; i++) {
@@ -61,6 +63,7 @@ void ofApp::setup() {
 
 	ofDirectory walkingDir(ofToDataPath("videos/walking"));
 	walkingDir.allowExt("mp4");
+	walkingDir.allowExt("mpeg");
 	walkingDir.listDir();
 
 	for (auto& file : walkingDir.getFiles()) {
@@ -73,6 +76,10 @@ void ofApp::setup() {
 		else walkingVids.pop_back();
 	}
 	cout << "loaded " << walkingVids.size() << " walking vids" << endl;
+
+	for (int i=0; i<walkingVids.size(); i++) {
+		walkingVidPlaces.push_back(i);
+	}
 
 	skinVid.load("videos/skin/slomo_texture_social_space.mp4");
 	skinVid.play();
@@ -164,16 +171,34 @@ void ofApp::update() {
 //--------------------------------------------------------------
 void ofApp::draw() {
 
-	displays[0].begin();
+	// BACKGROUND VIDEOS
 
+	//displays[3].begin();
 	ofClear(0);
 
-	ofSetColor(255);
-	walkingVids[0].draw(displays[0].getBounds());
-	//
-	ofSetColor(255,synthAlpha);
-	synthVid.draw(displays[0].getBounds());
+	float w = ofW / 5.;
+	float x = 0;
+	float sxPct = 0;
+	for (int i = 0; i < 5; i++) {
+		int idx = walkingVidPlaces[i];
+		ofTexture& tex = walkingVids[idx].getTexture();
+		float sx = tex.getWidth() * sxPct;
+		float sw = tex.getWidth() * 0.6; // 3/5
+		float sh = tex.getHeight();
+		tex.drawSubsection(x,0,w,ofH, sx,0,sw,sh);
+		x += w;
+		sxPct += 0.1;
+	}
 
+	//displays[3].end();
+	//displays[3].draw(0,0);
+
+	// CAMS
+
+	// cam 0
+
+	displays[0].begin();
+	ofClear(0);
 	cams[0].begin(displays[0].getBounds());
 	ofEnableDepthTest();
 
@@ -186,14 +211,12 @@ void ofApp::draw() {
 
 	ofDisableDepthTest();
 	cams[0].end();
-
 	displays[0].end();
 
+	// cam 1
 
 	displays[1].begin();
 	ofClear(0);
-	//displays[0].draw();
-
 	cams[1].begin(displays[1].getBounds());
 	ofEnableDepthTest();
 
@@ -206,13 +229,12 @@ void ofApp::draw() {
 
 	ofDisableDepthTest();
 	cams[1].end();
-
 	displays[1].end();
+
+	// cam 2
 
 	displays[2].begin();
 	ofClear(0);
-	//displays[1].draw();
-
 	cams[2].begin(displays[2].getBounds());
 	ofEnableDepthTest();
 
@@ -227,62 +249,70 @@ void ofApp::draw() {
 	cams[2].end();
 	displays[2].end();
 
-	int x = 0;
+
+	// draw cams to three screens
+	x = 0;
 	for (int i = 0; i < 3; i++) {
 		displays[i].draw(x, 0);
-		x+=1366;
+		x += 1366;
 	}
 
-	ofDrawBitmapStringHighlight(ofToString(ofGetFrameRate()) + " fps", 100, 100);
 
-	
-	topDisplay.begin();
-	ofClear(ofColor::darkGrey);
-	topCam.begin(topDisplay.getBounds());
-	ofEnableDepthTest();
+	// DEBUG VIEW
 
-	for (auto& worm : worms) {
+	if (drawTop) {
+
+		topDisplay.begin();
+		ofClear(ofColor::darkGrey);
+		topCam.begin(topDisplay.getBounds());
+		ofEnableDepthTest();
+
+		for (auto& worm : worms) {
+			ofSetColor(255);
+			worm.draw();
+			worm.drawMesh();
+		}
+
+		ofSetColor(ofColor::red);
+		ofDrawSphere(cams[0].getGlobalPosition() + cams[0].getLookAtDir() * 50, 3);
+		cams[0].draw();
+		ofSetColor(ofColor::green);
+		ofDrawSphere(cams[1].getGlobalPosition() + cams[1].getLookAtDir() * 50, 3);
+		cams[1].draw();
+		ofSetColor(ofColor::blue);
+		ofDrawSphere(cams[2].getGlobalPosition() + cams[2].getLookAtDir() * 50, 3);
+		cams[2].draw();
+
 		ofSetColor(255);
-		worm.draw();
-		worm.drawMesh();
+		ofDrawSphere(3);
+
+		ofPushMatrix();
+		ofTranslate(cams[0].getGlobalPosition());
+		ofDrawAxis(100);
+		ofPopMatrix();
+
+		ofDrawAxis(100);
+
+		ofDisableDepthTest();
+		topCam.end();
+
+		ofSetColor(255, 50);
+		grayImg1.draw(0, 0, 320, 240);
+		contourFinder1.draw(0, 0, 320, 240);
+		grayImg2.draw(320, 0, 320, 240);
+		contourFinder2.draw(320, 0, 320, 240);
+
+		ofSetColor(ofColor::coral);
+		for (auto& p : people1) { ofDrawSphere(p, 10); }
+		for (auto& p : people2) { ofDrawSphere(p, 10); }
+
+		ofSetColor(255);
+
+		ofDrawBitmapStringHighlight(ofToString(ofGetFrameRate()) + " fps", 100, 100);
+
+		topDisplay.end();
+		topDisplay.draw(0, 0);
 	}
-
-	ofSetColor(ofColor::red); 
-	ofDrawSphere(cams[0].getGlobalPosition() + cams[0].getLookAtDir() * 50, 3);
-	cams[0].draw();
-	ofSetColor(ofColor::green); 
-	ofDrawSphere(cams[1].getGlobalPosition() + cams[1].getLookAtDir() * 50, 3);
-	cams[1].draw();
-	ofSetColor(ofColor::blue); 
-	ofDrawSphere(cams[2].getGlobalPosition() + cams[2].getLookAtDir() * 50, 3);
-	cams[2].draw();
-
-	ofSetColor(255);
-	ofDrawSphere(3);
-
-	ofPushMatrix();
-	ofTranslate(cams[0].getGlobalPosition());
-	ofDrawAxis(100);
-	ofPopMatrix();
-
-	ofDrawAxis(100);
-
-	ofDisableDepthTest();
-	topCam.end();
-
-	ofSetColor(255,50);
-	grayImg1.draw(0,0,320,240);
-	contourFinder1.draw(0,0,320,240);
-	grayImg2.draw(320,0,320,240);
-	contourFinder2.draw(320,0,320,240);
-
-	ofSetColor(ofColor::coral);
-	for (auto& p : people1) { ofDrawSphere(p, 10); }
-	for (auto& p : people2) { ofDrawSphere(p, 10); }
-
-	ofSetColor(255);
-	topDisplay.end();
-	topDisplay.draw(0,0);
 	
 
 }
@@ -408,6 +438,8 @@ void ofApp::keyPressed(int key) {
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key) {
 
+
+	if (key == 't') drawTop = !drawTop;
 }
 
 //--------------------------------------------------------------
