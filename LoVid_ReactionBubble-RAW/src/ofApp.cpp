@@ -101,6 +101,7 @@ void ofApp::setup() {
 	// open cv
 	ofVec2f k(kinect1.width, kinect1.height);
 	grayImg1.allocate(k.x, k.y);		grayImg2.allocate(k.x, k.y);
+	pGrayImg1.allocate(k.x, k.y);		pGrayImg2.allocate(k.x, k.y);
 	threshNImg1.allocate(k.x, k.y);		threshNImg2.allocate(k.x, k.y);
 	threshFImg1.allocate(k.x, k.y);		threshFImg2.allocate(k.x, k.y);
 
@@ -290,7 +291,7 @@ void ofApp::draw() {
 		ofDisableDepthTest();
 		topCam.end();
 
-		ofSetColor(255, 50);
+		//ofSetColor(255, 50);
 		grayImg1.draw(0, 0, 320, 240);
 		contourFinder1.draw(0, 0, 320, 240);
 		grayImg2.draw(320, 0, 320, 240);
@@ -351,8 +352,12 @@ void ofApp::findPeople() {
 
 	if (kinect1.isFrameNew()) {
 
+		pGrayImg1 = grayImg1;
+
 		// load grayscale depth image from the kinect source
 		grayImg1.setFromPixels(kinect1.getDepthPixels());
+
+		grayImg1.absDiff(pGrayImg1);
 
 		// we do two thresholds - one for the far plane and one for the near plane
 		// we then do a cvAnd to get the pixels which are a union of the two thresholds
@@ -391,8 +396,13 @@ void ofApp::findPeople() {
 	}
 
 	if (kinect2.isFrameNew()) {
+
+		//pGrayImg2 = grayImg2;
+
 		// load grayscale depth image from the kinect source
 		grayImg2.setFromPixels(kinect2.getDepthPixels());
+
+		//grayImg2.absDiff(pGrayImg2);
 
 		// we do two thresholds - one for the far plane and one for the near plane
 		// we then do a cvAnd to get the pixels which are a union of the two thresholds

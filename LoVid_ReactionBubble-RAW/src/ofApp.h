@@ -96,6 +96,7 @@ class ofApp : public ofBaseApp{
 		//ofxCvColorImage colorImg1, colorImg2; // color depth images
 
 		ofxCvGrayscaleImage grayImg1, grayImg2; // grayscale depth images
+		ofxCvGrayscaleImage pGrayImg1, pGrayImg2; // diff for background subtraction
 		ofxCvGrayscaleImage threshNImg1, threshNImg2; // the near thresholded images
 		ofxCvGrayscaleImage threshFImg1, threshFImg2; // the far thresholded images
 
