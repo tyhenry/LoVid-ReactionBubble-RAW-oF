@@ -25,6 +25,7 @@ public:
 		bounds = area;
 		allocate(bounds);
 	}
+	ofRectangle getBounds()		{ return bounds; }
 
 	virtual void begin()		{ fbo.begin(); }
 	virtual void end()			{ fbo.end(); }

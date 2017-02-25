@@ -51,7 +51,7 @@ int Commander::update(){
     // parse incoming bytes
     int newCmds = 0;
     
-    while (serial->available() > 0){
+    while (serial && serial->available() > 0){
         
         // write to buffer until we reach max buffer length or get an endChar
         

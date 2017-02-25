@@ -48,6 +48,7 @@ public:
 		com.setSerial(serial);
 		bool b = com.connect();
 		ofLogVerbose("SensorManager") << (b ? "":"not? ") << "connnected to device!";
+		return b;
 	}
 
 	bool isConnected() { return com.isConnected(); }

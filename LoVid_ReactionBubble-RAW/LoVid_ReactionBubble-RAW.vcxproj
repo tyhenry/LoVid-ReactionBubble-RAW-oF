@@ -240,6 +240,7 @@ libs/libfreenect/platform/windows</AdditionalIncludeDirectories>
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlerror.cpp" />
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlparser.cpp" />
     <ClCompile Include="src\SensorManager.cpp" />
+    <ClCompile Include="src\Worm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\addons\ofxKinect\libs\libfreenect\include\libfreenect.h" />
@@ -302,6 +303,7 @@ libs/libfreenect/platform/windows</AdditionalIncludeDirectories>
     <ClInclude Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.h" />
     <ClInclude Include="src\Sensor.h" />
     <ClInclude Include="src\SensorManager.h" />
+    <ClInclude Include="src\Worm.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">

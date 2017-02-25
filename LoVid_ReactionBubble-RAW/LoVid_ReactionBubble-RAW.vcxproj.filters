@@ -130,6 +130,9 @@
     <ClCompile Include="..\..\..\addons\ofxKinect\libs\libfreenect\src\usb_libusb10.c">
       <Filter>addons\ofxKinect\libs\libfreenect\src</Filter>
     </ClCompile>
+    <ClCompile Include="src\Worm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -412,6 +415,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\addons\ofxKinect\libs\libusb-win32\include\lusb0_usb.h">
       <Filter>addons\ofxKinect\libs\libusb-win32\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Worm.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
