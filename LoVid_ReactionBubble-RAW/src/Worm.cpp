@@ -47,7 +47,9 @@ bool Worm::update()
 	avoidEdges();
 
 	ofVec3f pos3d = pos;
-	pos3d.z = sin(ofGetElapsedTimef()*.5 + timeOffset) * radius*wriggle;
+	float sNoise = ofSignedNoise(ofGetElapsedTimef()*0.05 + timeOffset);
+	pos3d.z = sNoise * 100.;
+	pos3d.z += sin(ofGetElapsedTimef() + timeOffset) * wriggle;
 
 	spinePts.push_front(pos3d);
 	if (spinePts.size() > maxPts) spinePts.pop_back();

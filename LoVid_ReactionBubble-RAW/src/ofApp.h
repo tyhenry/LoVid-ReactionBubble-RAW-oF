@@ -27,6 +27,8 @@ class ofApp : public ofBaseApp{
 	int nearThreshold = 150;
 	int farThreshold = 100;
 
+	float capThreshold = 0.2; // 0-1
+
 	ofRectangle wormBounds;
 
 
@@ -70,6 +72,9 @@ class ofApp : public ofBaseApp{
 
 		vector<ofVideoPlayer> walkingVids;
 		vector<int> walkingVidPlaces;
+		int bgVid = 0;
+
+		vector<float> effectPcts;
 
 		ofVideoPlayer synthVid;
 		int synthAlpha = 0;
@@ -101,6 +106,8 @@ class ofApp : public ofBaseApp{
 		ofxCvGrayscaleImage threshFImg1, threshFImg2; // the far thresholded images
 
 		ofxCvContourFinder contourFinder1, contourFinder2;
+		bool gotBg1, gotBg2 = false;
+		bool gotImg1, gotImg2 = false;
 
 		bool drawTop = false;
 

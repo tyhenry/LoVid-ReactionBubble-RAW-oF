@@ -5,9 +5,9 @@
 void ofApp::setup() {
 
 	//ofSetLogLevel("SensorManager", OF_LOG_VERBOSE);
-	ofSetLogLevel("Cap", OF_LOG_VERBOSE);
-	ofSetLogLevel("Beam", OF_LOG_VERBOSE);
-	ofSetLogLevel("ofApp", OF_LOG_VERBOSE);
+	//ofSetLogLevel("Cap", OF_LOG_VERBOSE);
+	//ofSetLogLevel("Beam", OF_LOG_VERBOSE);
+	//ofSetLogLevel("ofApp", OF_LOG_VERBOSE);
 
 	ofDisableArbTex();
 
@@ -16,8 +16,9 @@ void ofApp::setup() {
 	ofW = ofGetWidth();
 	ofH = ofGetHeight();
 
-	wormBounds.set(0,0,1366,768);
-
+	//wormBounds.set(0,0,1366,768);
+	//wormBounds.set(0,0,683,384);
+	wormBounds.set(0,0,400,225); //?try this 
 	
 	// setup displays
 
@@ -35,14 +36,17 @@ void ofApp::setup() {
 	cams[1].lookAt(wormBounds.getTopRight(), up);
 	cams[2].lookAt(wormBounds.getBottomRight(), up);
 
-	topDisplay = Display(1366,768);
+	for (auto& c : cams) {
+		//c.enableOrtho(); // try this for worms, maybe look cool?
+		c.setNearClip(10);
+	}
+
+	topDisplay = Display(wormBounds); //Display(1366,768);
 	ofVec3f p = wormBounds.getCenter();
 	p.z = -700;
 	topCam.setPosition(p);
 	topCam.lookAt(wormBounds.getCenter(), ofVec3f(0,-1,0)); // +y should be bottom screen
 
-
-	overCam.setTarget(wormBounds.getCenter());
 
 	// setup sensors
 
@@ -80,6 +84,11 @@ void ofApp::setup() {
 	for (int i=0; i<5; i++) {
 		walkingVidPlaces.push_back(i);
 	}
+
+	bgVid = walkingVids.size() - 1;
+
+
+	effectPcts.resize(6, 0); // 6 bowls - 0-1 pct effect per bowl
 
 	skinVid.load("videos/skin/slomo_texture_social_space.mp4");
 	skinVid.play();
@@ -121,33 +130,27 @@ void ofApp::update() {
 	// beams
 	int idx = 0;
 	for (auto& beam : beams) {
-		if (beam.get() != 0) {
-			// switch video
+		if (beam.get() == 62500) {
+
 			beamBreak(idx, beam);
-
-			// reset
-			beam.set(0, false);
-
 			ofLogNotice("ofApp") << "beam [" << idx << "] broken!";
 		}
 		idx++;
 	}
 
 	// caps
-	//idx = 0;
-	//for (auto& cap : caps) {
-	//	capSense(idx, cap);
-	//	idx++;
-	//}
-	// override
-	capSense(0, caps[0]);
+	idx = 0;
+	for (auto& cap : caps) {
+		capSense(idx, cap);
+		idx++;
+	}
 
 	// kinect
 
 	kinect1.update();
 	kinect2.update();
 
-	findPeople();
+	findPeople(); // get people positions within worm bounds
 
 	// worms
 
@@ -156,14 +159,30 @@ void ofApp::update() {
 		worm.flock(worms);
 		//ofVec2f seek = worm.seek(ofVec2f(ofRandom(640,720), ofRandom(350,400)), 2000);
 		//worm.applyForce(seek); // seek mouse
-		for (auto& p : people1) {
-			ofVec2f seek = worm.seek(p, 1366);
-			worm.applyForce(seek * ofRandom(-.5,1.));
+		if (people1.size() > 0) {
+			for (auto& p : people1) {
+				//ofVec2f seek = worm.seek(p, 1366);
+				//worm.applyForce(seek * ofRandom(-.5,1.));
+				ofVec2f seek = worm.seek(p, wormBounds.width);
+				worm.applyForce(seek);
+			}
 		}
-		for (auto& p : people2) {
-			ofVec2f seek = worm.seek(p, 1366);
-			worm.applyForce(seek * ofRandom(-.5,1.));
+		//else {
+		//	ofVec2f seek = worm.seek(wormBounds.getCenter());
+		//	worm.applyForce(seek);
+		//}
+		if (people2.size() > 0) {
+			for (auto& p : people2) {
+				//ofVec2f seek = worm.seek(p, 1366);
+				//worm.applyForce(seek * ofRandom(-.5,1.));
+				ofVec2f seek = worm.seek(p, wormBounds.width);
+				worm.applyForce(seek);
+			}
 		}
+		//else {
+		//	ofVec2f seek = worm.seek(wormBounds.getCenter());
+		//	worm.applyForce(seek);
+		//}
 		worm.update();
 	}
 
@@ -172,21 +191,37 @@ void ofApp::update() {
 //--------------------------------------------------------------
 void ofApp::draw() {
 
-	// BACKGROUND VIDEOS
+	// BACKGROUND VID
 
-	float w = ofW / 5.;
-	float x = 0;
-	float sxPct = 0;
-	for (int i = 0; i < 5; i++) {
-		int idx = walkingVidPlaces[i];
-		ofTexture& tex = walkingVids[idx].getTexture();
-		float sx = tex.getWidth() * sxPct;
-		float sw = tex.getWidth() * 0.6; // 3/5
-		float sh = tex.getHeight();
-		tex.drawSubsection(x,0,w,ofH, sx,0,sw,sh);
-		x += w;
-		sxPct += 0.1;
+	// cap effects
+	ofColor tint = ofColor::white;
+	//for (int i=0; i<caps.size(); i++){
+	//	float hue = (255./caps.size()) * i;
+	//	float a = 255.*effectPcts[i];
+	//	ofColor c = ofColor::fromHsb(hue,255,200);
+	//	tint.lerp(c,effectPcts[i]);
+	//}
+
+	ofPushStyle();
+	ofSetColor(tint);
+	float bgX = 0;
+	for (int i = 0; i < 3; i++) {
+		walkingVids[bgVid].draw(bgX,0, 1366,768);
+		bgX += 1366;
 	}
+
+	// WALKING VIDS
+
+	float vidX = 0;
+	for (int i = 0; i < numBeams; i++) {
+		auto& vid = walkingVids[walkingVidPlaces[i]];
+		float timeElapsedSinceBreak = ofGetElapsedTimef() - beams[i].get();
+		int alpha = ofMap(timeElapsedSinceBreak, 0, 30, 255, 0, true);
+		ofSetColor(tint.r,tint.g,tint.b, alpha);
+		vid.draw(vidX,0,1366,768);
+		vidX += 1366*0.5;
+	}
+	ofPopStyle();
 
 	// CAMS
 
@@ -246,10 +281,10 @@ void ofApp::draw() {
 
 
 	// draw cams to three screens
-	x = 0;
+	float dispX = 0;
 	for (int i = 0; i < 3; i++) {
-		displays[i].draw(x, 0);
-		x += 1366;
+		displays[i].draw(dispX, 0);
+		dispX += 1366;
 	}
 
 
@@ -291,11 +326,6 @@ void ofApp::draw() {
 		ofDisableDepthTest();
 		topCam.end();
 
-		//ofSetColor(255, 50);
-		grayImg1.draw(0, 0, 320, 240);
-		contourFinder1.draw(0, 0, 320, 240);
-		grayImg2.draw(320, 0, 320, 240);
-		contourFinder2.draw(320, 0, 320, 240);
 
 		ofSetColor(ofColor::coral);
 		for (auto& p : people1) { ofDrawSphere(p, 10); }
@@ -307,6 +337,15 @@ void ofApp::draw() {
 
 		topDisplay.end();
 		topDisplay.draw(0, 0);
+
+		//ofSetColor(255, 50);
+		ofPushMatrix();
+		ofTranslate(wormBounds.width,0);
+		grayImg2.draw(0, 0, 320, 240);
+		contourFinder2.draw(0, 0, 320, 240);
+		grayImg1.draw(320, 0, 320, 240);
+		contourFinder1.draw(320, 0, 320, 240);
+		ofPopMatrix();
 	}
 	
 
@@ -318,21 +357,30 @@ void ofApp::exit()
 	kinect2.close();
 }
 
+
+
+// BEAM / CAP LOGIC:
+
+
 void ofApp::beamBreak(int beamIdx, Beam& beam) { // trigger or switch video
 
-	int vidIdx = ofRandom(4.999);
+	int vidIdx = bgVid;
+	while (vidIdx == bgVid) {
+		vidIdx = ofRandom(4.999);
+	}
 	walkingVidPlaces[beamIdx] = vidIdx;
-	ofLogVerbose("ofApp") << "beam [" << beamIdx << "] switched to vid [" << vidIdx << "]";
+
+	ulong time = (ulong)ofGetElapsedTimef();
+	beam.set(time,false); // manually set to current time
+
+	ofLogVerbose("ofApp") << "beam [" << beamIdx << "] is now vid [" << vidIdx << "]";
 }
 
 
 void ofApp::capSense(int capIdx, Cap& cap) {
 
-	float val = cap.get();
-	val = ofMap(val, cap.getMin(), cap.getMax(), 0, 1, true); // map to tracking min/max
-
-	float a = 255.f * val;
-	synthAlpha = (int)a;
+	float val = ofMap(cap.get(), cap.getMin(), cap.getMax(), 0, 1, true); // map to tracking min/max
+	effectPcts[capIdx] = ofMap(val, capThreshold, 1.0, 0, 1, true); // threshold at 0.2
 
 	// increase
 	//if (val > avg * 1.2) {
@@ -352,12 +400,16 @@ void ofApp::findPeople() {
 
 	if (kinect1.isFrameNew()) {
 
-		pGrayImg1 = grayImg1;
+		if (gotImg1 && !gotBg1) {
+			pGrayImg1 = grayImg1;
+			gotBg1 = true;
+		}
+
 
 		// load grayscale depth image from the kinect source
 		grayImg1.setFromPixels(kinect1.getDepthPixels());
 
-		grayImg1.absDiff(pGrayImg1);
+		//grayImg1.absDiff(pGrayImg1);
 
 		// we do two thresholds - one for the far plane and one for the near plane
 		// we then do a cvAnd to get the pixels which are a union of the two thresholds
@@ -371,6 +423,12 @@ void ofApp::findPeople() {
 
 		// update the cv images
 		grayImg1.flagImageChanged();
+		gotImg1 = true;
+
+		if (gotBg1) {
+			grayImg1.absDiff(pGrayImg1); // bg subtraction
+			grayImg1.erode(); grayImg1.erode(); grayImg1.erode(); grayImg1.erode();
+		}
 
 		// find contours which are between the size of 20 pixels and 1/3 the w*h pixels.
 		// also, find holes is set to true so we will get interior contours as well....
@@ -397,12 +455,13 @@ void ofApp::findPeople() {
 
 	if (kinect2.isFrameNew()) {
 
-		//pGrayImg2 = grayImg2;
+		if (gotImg2 && !gotBg2) {
+			pGrayImg2 = grayImg2;
+			gotBg2 = true;
+		}
 
 		// load grayscale depth image from the kinect source
 		grayImg2.setFromPixels(kinect2.getDepthPixels());
-
-		//grayImg2.absDiff(pGrayImg2);
 
 		// we do two thresholds - one for the far plane and one for the near plane
 		// we then do a cvAnd to get the pixels which are a union of the two thresholds
@@ -416,6 +475,12 @@ void ofApp::findPeople() {
 
 		// update the cv images
 		grayImg2.flagImageChanged();
+		gotImg2 = true;
+
+		if (gotBg2) {
+			grayImg2.absDiff(pGrayImg2); // bg subtraction
+			grayImg2.erode(); grayImg2.erode(); grayImg2.erode(); grayImg2.erode();
+		}
 
 		// find contours which are between the size of 20 pixels and 1/3 the w*h pixels.
 		// also, find holes is set to true so we will get interior contours as well....
@@ -472,7 +537,12 @@ void ofApp::mousePressed(int x, int y, int button) {
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button) {
 
-	worms.push_back(Worm(wormBounds, wormBounds.getCenter(), 3., 0.5, 0.05));
+	// updates: randomize maxspeed, maxforce and wriggle size
+	// also, worm wriggle speed is modulated by sin
+	float maxSpeed = ofRandom(0.2,0.8);
+	float maxForce = ofRandom(0.03,0.15);
+	worms.push_back(Worm(wormBounds, wormBounds.getCenter(), 3., maxSpeed, maxForce));
+	worms.back().wriggle = ofRandom(1.,8.);
 	cout << "# worms: " << worms.size() << endl;
 }
 

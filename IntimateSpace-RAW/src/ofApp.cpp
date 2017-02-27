@@ -1,10 +1,22 @@
 #include "ofApp.h"
 
-float vw = 1280;
-float vh = 720;
+float vw = 1920;
+float vh = 1080;
+float sx, sy, sw, sh;
+
+
+ofRectangle roi;
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+
+	sh = vh*0.25;
+	sw = sh*1.3333;
+	sx = (vw - sw)*0.5;
+	sx += sw*.05; // shift right
+	sy = (vh - sh)*0.5;
+
+	roi.set(sx,sy,sw,sh);
 
 	ofBackground(0);
 
@@ -13,20 +25,22 @@ void ofApp::setup(){
 	vid.setVolume(0);
 
 	cam.setVerbose(true);
-	cam.setDeviceID(1);
+	//cam.setDeviceID(1);
 	cam.setup(vw, vh);
 
-	colorImg.allocate(vw, vh);
-	grayImg.allocate(vw, vh);
-	grayBg.allocate(vw, vh);
-	grayDiff.allocate(vw, vh);
+	colorImg.allocate(vw, vh);  colorImg.setROI(roi);
+	grayImg.allocate(vw, vh);	grayImg.setROI(roi);
+	grayBg.allocate(vw, vh);	grayBg.setROI(roi);
+	grayDiff.allocate(vw, vh);	grayDiff.setROI(roi);
 
 	bLearnBackground = true;
-	threshold = 100;
+	threshold = 30;
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
+
+	if (ofGetElapsedTimef() < 60) bLearnBackground = true; // bg for 1 minute after start
 
 	vid.update();
 
@@ -60,10 +74,7 @@ void ofApp::draw(){
 
 	if (drawCam) {
 		// draw cam subsection
-		float sh = vh;
-		float sw = vh*1.3333;
-		float sx = vw - sw;
-		float sy = 0;
+
 		cam.getTexture().drawSubsection(0,0,1024,768, sx,sy,sw,sh);
 	}
 	else vid.draw(0,0,1024,768);
@@ -96,6 +107,11 @@ void ofApp::keyPressed(int key){
 	case 'd':
 		debugDraw = !debugDraw;
 		break;
+
+	case 'f':
+		ofToggleFullscreen();
+		break;
+
 	}
 
 	cout << "threshold: " << threshold << endl;

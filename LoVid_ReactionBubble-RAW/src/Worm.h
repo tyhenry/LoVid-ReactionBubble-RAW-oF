@@ -31,8 +31,8 @@ public:
 	ofVec2f seek(ofVec2f target, float maxDist);
 	ofVec2f avoid(ofVec2f target, float maxDist);
 
-	void flock(vector<Worm>& worms, float sepW = 1.5f, float aliW = 1.f, float cohW = 1.f); // weights
-	ofVec2f separate (vector<Worm>& worms, float desiredSeparation = 25.f);
+	void flock(vector<Worm>& worms, float sepW = 1.5f, float aliW = 0.1f, float cohW = 1.f); // weights
+	ofVec2f separate (vector<Worm>& worms, float desiredSeparation = 40.f);
 	ofVec2f align (vector<Worm>& worms, float neighborDist = 50.f);
 	ofVec2f cohesion (vector<Worm>& worms, float neighborDist = 50.f);
 
@@ -55,6 +55,7 @@ public:
 
 	float timeOffset = 0;
 	float wriggle = 5.;
+	//float zOffset = 0;
 
 	const float sqrt3 = 1.73205;
 	// 30,60,90 triangle sides = x*sqrt3, x, 2x (hypotenuse)
