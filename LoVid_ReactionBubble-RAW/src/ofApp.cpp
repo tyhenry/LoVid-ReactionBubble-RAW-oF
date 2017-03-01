@@ -114,6 +114,25 @@ void ofApp::setup() {
 	threshNImg1.allocate(k.x, k.y);		threshNImg2.allocate(k.x, k.y);
 	threshFImg1.allocate(k.x, k.y);		threshFImg2.allocate(k.x, k.y);
 
+
+	// generate worms
+
+	for (int i = 0; i < numWorms; i++) {
+		float maxSpeed = ofRandom(0.2, 0.8);
+		float maxForce = ofRandom(0.03, 0.15);
+		worms.push_back(Worm(wormBounds, wormBounds.getCenter(), 3., maxSpeed, maxForce));
+		worms.back().wriggle = ofRandom(1., 8.);
+	}
+	ofLogNotice("ofApp") << "# worms: " << worms.size();
+
+
+	// effects
+
+
+	filterMgr.setup();
+	filterMgr.bBrcosa = true;
+
+
 }
 
 //--------------------------------------------------------------
@@ -145,6 +164,88 @@ void ofApp::update() {
 		idx++;
 	}
 
+	// filters
+
+	for (int i = 0; i < effectPcts.size(); i++) {
+
+		float pct = effectPcts[i];
+
+		switch (i) {
+
+			case 0: // TINT
+			{
+				if (pct == 0) {
+					filterMgr.tint.reset();
+					filterMgr.bTint = false;
+				}
+				else {
+					float hue = pct * 0.8;
+					filterMgr.tint.setHue(ofFloatColor::fromHsb(hue, 1., 1.));
+					filterMgr.bTint = true;
+				}
+				break;
+			}
+			case 1: // PIXELATE
+			{
+				if (pct == 0) {
+					filterMgr.pixelate.reset();
+					filterMgr.bPixelate = false;
+				}
+				else {
+					float nDivs = floor(ofMap(pct, 0, 1, 200, 20, true));
+					filterMgr.pixelate.setNumDivs(ofVec2f(nDivs, floor(nDivs / 1.7778)));
+					filterMgr.bPixelate = true;
+				}
+				break;
+			}
+			case 2: // GLITCH
+			{
+				if (pct == 0) {
+					filterMgr.glitch.reset();
+					filterMgr.bGlitch = false;
+				}
+				else {
+					filterMgr.glitch.setGlitch(pct);
+					filterMgr.bGlitch = true;
+				}
+				break;
+			}
+			case 3: // SATURATION
+			{
+				if (pct == 0) {
+					filterMgr.brcosa.setSat(1.0); // reset
+				}
+				else {
+					float sat = ofMap(pct, 0,1, 2,0, true); // de-saturate
+					filterMgr.brcosa.setSat(sat);
+				}
+				break;
+			}
+			case 4: // CONTRAST
+			{
+				if (pct == 0) {
+					filterMgr.brcosa.setCon(1.0); // reset
+				} 
+				else {
+					float con = ofMap(pct, 0, 1, 4., 0.25, true); // de-contrast
+					filterMgr.brcosa.setCon(con);
+				}
+				break;
+			}
+			case 5: // BRIGHTNESS
+			{
+				if (pct == 0) {
+					filterMgr.brcosa.setBrt(1.0);
+				}
+				else {
+					float brt = ofMap(pct, 0,1, 1., 0.3, true); // darken?
+					filterMgr.brcosa.setBrt(brt);
+				}
+				break;
+			}
+		}
+	}
+
 	// kinect
 
 	kinect1.update();
@@ -158,7 +259,7 @@ void ofApp::update() {
 		worm.resetForces();
 
 		// flock if no people
-		if (people1.size() < 1 && people2.size() < 1) {
+		if (people1.size() < 1 || people2.size() < 1) {
 			worm.flock(worms);
 		}
 
@@ -201,7 +302,6 @@ void ofApp::draw() {
 	// BACKGROUND VID
 
 	// cap effects
-	ofColor tint = ofColor::white;
 	//for (int i=0; i<caps.size(); i++){
 	//	float hue = (255./caps.size()) * i;
 	//	float a = 255.*effectPcts[i];
@@ -209,26 +309,32 @@ void ofApp::draw() {
 	//	tint.lerp(c,effectPcts[i]);
 	//}
 
-	ofPushStyle();
-	ofSetColor(tint);
+	ofTexture& bgTex = walkingVids[bgVid].getTexture();
+
+	filterMgr.applyFilters(bgTex);
+
 	float bgX = 0;
 	for (int i = 0; i < 3; i++) {
-		walkingVids[bgVid].draw(bgX,0, 1366,768);
+		filterMgr.result.draw(bgX,0, 1366,768);
+		//walkingVids[bgVid].draw(bgX,0, 1366,768);
 		bgX += 1366;
 	}
 
 	// WALKING VIDS
 
+	
 	float vidX = 0;
 	for (int i = 0; i < numBeams; i++) {
 		auto& vid = walkingVids[walkingVidPlaces[i]];
 		float timeElapsedSinceBreak = ofGetElapsedTimef() - beams[i].get();
+		cout << "time elapsed for beam [" << i << "]: " << timeElapsedSinceBreak << endl;
 		int alpha = ofMap(timeElapsedSinceBreak, 0, 30, 255, 0, true);
-		ofSetColor(tint.r,tint.g,tint.b, alpha);
+		ofSetColor(255, alpha);
 		vid.draw(vidX,0,1366,768);
 		vidX += 1366*0.5;
 	}
-	ofPopStyle();
+	
+	ofSetColor(255);
 
 	// CAMS
 
@@ -366,10 +472,10 @@ void ofApp::draw() {
 			ofDrawCircle(ofVec3f(), rP);
 
 			ofNoFill();
-			ofSetColor(ofColor::yellow);
+			ofSetColor(ofColor::red);
 			ofDrawCircle(ofVec3f(), rA);
 
-			ofSetColor(ofColor::red);
+			ofSetColor(ofColor::orange);
 			ofDrawCircle(ofVec3f(), 30); 
 			ofTranslate(70,0);
 			ofFill();
@@ -382,7 +488,7 @@ void ofApp::draw() {
 		i = 0;
 		for (auto& cap : caps) {
 			string data = "val: " + ofToString(cap.get(), 0) + "\navg: " + ofToString(cap.getBaseAvg(), 0) + "\nmax: " + ofToString(cap.getMax(), 0);
-			data += "\npct: " + ofToString(effectPcts[i], 2);
+			data += "\npct: " + ofToString(effectPcts[i], 5);
 			ofDrawBitmapStringHighlight(data, ofVec3f());
 			ofTranslate(70, 50);
 		}
@@ -582,11 +688,12 @@ void ofApp::mouseReleased(int x, int y, int button) {
 
 	// updates: randomize maxspeed, maxforce and wriggle size
 	// also, worm wriggle speed is modulated by sin
-	float maxSpeed = ofRandom(0.2,0.8);
-	float maxForce = ofRandom(0.03,0.15);
-	worms.push_back(Worm(wormBounds, wormBounds.getCenter(), 3., maxSpeed, maxForce));
-	worms.back().wriggle = ofRandom(1.,8.);
-	cout << "# worms: " << worms.size() << endl;
+
+	//float maxSpeed = ofRandom(0.2,0.8);
+	//float maxForce = ofRandom(0.03,0.15);
+	//worms.push_back(Worm(wormBounds, wormBounds.getCenter(), 3., maxSpeed, maxForce));
+	//worms.back().wriggle = ofRandom(1.,8.);
+	//cout << "# worms: " << worms.size() << endl;
 }
 
 //--------------------------------------------------------------

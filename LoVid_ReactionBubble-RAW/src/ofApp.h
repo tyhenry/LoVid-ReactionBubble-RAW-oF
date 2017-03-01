@@ -8,10 +8,14 @@
 #include "ofxKinect.h"
 #include "ofxOpenCv.h"
 
+#include "Filter Manager\FilterManager.h"
+
+
 class ofApp : public ofBaseApp{
 
-
 	// setup
+
+	const int numWorms = 5;
 
 	const int serialIdx = 1;
 	const int serialSpeed = 115200;
@@ -27,12 +31,12 @@ class ofApp : public ofBaseApp{
 	int nearThreshold = 150;
 	int farThreshold = 100;
 
-	float capThreshold = 0.05; // 0-1
+	float capThreshold = 0.2; // 0-1
 
 	ofRectangle wormBounds;
 
-
 	public:
+
 		void setup();
 		void update();
 		void draw();
@@ -110,5 +114,7 @@ class ofApp : public ofBaseApp{
 		bool gotImg1, gotImg2 = false;
 
 		bool drawTop = false;
+
+		FilterManager filterMgr;
 
 };
