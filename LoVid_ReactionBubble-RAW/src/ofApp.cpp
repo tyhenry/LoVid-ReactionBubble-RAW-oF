@@ -156,34 +156,41 @@ void ofApp::update() {
 
 	for (auto& worm : worms) {
 		worm.resetForces();
-		worm.flock(worms);
-		//ofVec2f seek = worm.seek(ofVec2f(ofRandom(640,720), ofRandom(350,400)), 2000);
-		//worm.applyForce(seek); // seek mouse
+
+		// flock if no people
+		if (people1.size() < 1 && people2.size() < 1) {
+			worm.flock(worms);
+		}
+
+		// or seek people
 		if (people1.size() > 0) {
 			for (auto& p : people1) {
-				//ofVec2f seek = worm.seek(p, 1366);
-				//worm.applyForce(seek * ofRandom(-.5,1.));
 				ofVec2f seek = worm.seek(p, wormBounds.width);
 				worm.applyForce(seek);
 			}
 		}
-		//else {
-		//	ofVec2f seek = worm.seek(wormBounds.getCenter());
-		//	worm.applyForce(seek);
-		//}
+
 		if (people2.size() > 0) {
 			for (auto& p : people2) {
-				//ofVec2f seek = worm.seek(p, 1366);
-				//worm.applyForce(seek * ofRandom(-.5,1.));
 				ofVec2f seek = worm.seek(p, wormBounds.width);
 				worm.applyForce(seek);
 			}
 		}
+
+		worm.update();
+
+		//ofVec2f seek = worm.seek(ofVec2f(ofRandom(640,720), ofRandom(350,400)), 2000);
+		//worm.applyForce(seek); // seek mouse
+
 		//else {
 		//	ofVec2f seek = worm.seek(wormBounds.getCenter());
 		//	worm.applyForce(seek);
 		//}
-		worm.update();
+
+		//else {
+		//	ofVec2f seek = worm.seek(wormBounds.getCenter());
+		//	worm.applyForce(seek);
+		//}
 	}
 
 }
@@ -346,6 +353,40 @@ void ofApp::draw() {
 		grayImg1.draw(320, 0, 320, 240);
 		contourFinder1.draw(320, 0, 320, 240);
 		ofPopMatrix();
+
+		ofPushMatrix();
+		ofTranslate(100,wormBounds.height + 100);
+		ofDrawRectangle(-100, -50, 600, 400);
+		int i = 0;
+		for (auto& cap : caps) {
+			float rA = ofMap(cap.get(), cap.getBaseAvg(), cap.getBaseAvg()*5., 3, 30);
+			float rP = ofMap(effectPcts[i++], 0, 1, 3, 30, true);
+
+			ofSetColor(ofColor::blue);
+			ofDrawCircle(ofVec3f(), rP);
+
+			ofNoFill();
+			ofSetColor(ofColor::yellow);
+			ofDrawCircle(ofVec3f(), rA);
+
+			ofSetColor(ofColor::red);
+			ofDrawCircle(ofVec3f(), 30); 
+			ofTranslate(70,0);
+			ofFill();
+		}
+		ofSetColor(255);
+		ofPopMatrix();
+
+		ofPushMatrix();
+		ofTranslate(100, wormBounds.height+130);
+		i = 0;
+		for (auto& cap : caps) {
+			string data = "val: " + ofToString(cap.get(), 0) + "\navg: " + ofToString(cap.getBaseAvg(), 0) + "\nmax: " + ofToString(cap.getMax(), 0);
+			data += "\npct: " + ofToString(effectPcts[i], 2);
+			ofDrawBitmapStringHighlight(data, ofVec3f());
+			ofTranslate(70, 50);
+		}
+		ofPopMatrix();
 	}
 	
 
@@ -379,7 +420,9 @@ void ofApp::beamBreak(int beamIdx, Beam& beam) { // trigger or switch video
 
 void ofApp::capSense(int capIdx, Cap& cap) {
 
-	float val = ofMap(cap.get(), cap.getMin(), cap.getMax(), 0, 1, true); // map to tracking min/max
+	//float val = ofMap(cap.get(), cap.getMin(), cap.getMax(), 0, 1, true); // map to tracking min/max
+
+	float val = ofMap(cap.get(), cap.getBaseAvg(), cap.getBaseAvg()*5., 0, 1, true);
 	effectPcts[capIdx] = ofMap(val, capThreshold, 1.0, 0, 1, true); // threshold at 0.2
 
 	// increase

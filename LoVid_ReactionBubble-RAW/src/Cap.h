@@ -24,6 +24,12 @@ public:
 		samples.push_back((float)value);
 		if (samples.size() >= maxSamples) {
 			samples.pop_front();
+			if (avgVal == 0) {
+				avgVal = getAvg(); // only once - this will be baseline
+			}
+		}
+		else {
+			ofLogVerbose("Cap") << "cap samples: " << samples.size();
 		}
 
 		// check if min or max
@@ -55,6 +61,10 @@ public:
 		}
 		if (i > 0) return sum / i;
 		return 0;
+	}
+
+	float getBaseAvg() {
+		return avgVal;
 	}
 
 	ulong getMin()			{ return min; }
@@ -94,6 +104,7 @@ public:
 private:
 
 	ulong valuePrev = 0;
+	float avgVal = 0;
 	ulong mapLow, mapHigh, mapInLow, mapInHigh;
 	bool bMap, bClamp;
 
@@ -103,5 +114,5 @@ private:
 
 	// samples for averaging
 	deque<float> samples; // num samples
-	int maxSamples = 200;
+	int maxSamples = 300;
 };

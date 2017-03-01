@@ -27,7 +27,7 @@ class ofApp : public ofBaseApp{
 	int nearThreshold = 150;
 	int farThreshold = 100;
 
-	float capThreshold = 0.2; // 0-1
+	float capThreshold = 0.05; // 0-1
 
 	ofRectangle wormBounds;
 
