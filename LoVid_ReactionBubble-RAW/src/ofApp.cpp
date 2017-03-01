@@ -301,14 +301,6 @@ void ofApp::draw() {
 
 	// BACKGROUND VID
 
-	// cap effects
-	//for (int i=0; i<caps.size(); i++){
-	//	float hue = (255./caps.size()) * i;
-	//	float a = 255.*effectPcts[i];
-	//	ofColor c = ofColor::fromHsb(hue,255,200);
-	//	tint.lerp(c,effectPcts[i]);
-	//}
-
 	ofTexture& bgTex = walkingVids[bgVid].getTexture();
 
 	filterMgr.applyFilters(bgTex);
@@ -316,7 +308,6 @@ void ofApp::draw() {
 	float bgX = 0;
 	for (int i = 0; i < 3; i++) {
 		filterMgr.result.draw(bgX,0, 1366,768);
-		//walkingVids[bgVid].draw(bgX,0, 1366,768);
 		bgX += 1366;
 	}
 
@@ -327,10 +318,20 @@ void ofApp::draw() {
 	for (int i = 0; i < numBeams; i++) {
 		auto& vid = walkingVids[walkingVidPlaces[i]];
 		float timeElapsedSinceBreak = ofGetElapsedTimef() - beams[i].get();
-		cout << "time elapsed for beam [" << i << "]: " << timeElapsedSinceBreak << endl;
-		int alpha = ofMap(timeElapsedSinceBreak, 0, 30, 255, 0, true);
-		ofSetColor(255, alpha);
-		vid.draw(vidX,0,1366,768);
+		cout << "beam [" << i <<"] time elapsed since break: " << timeElapsedSinceBreak << endl;
+		float alpha = 0;
+		if (timeElapsedSinceBreak < 2) {
+			alpha = ofMap(timeElapsedSinceBreak, 0, 2, 0, 1, true); // fade in
+			alpha = pow(alpha,2);
+		}
+		else if (timeElapsedSinceBreak < 30) {
+			alpha = ofMap(timeElapsedSinceBreak, 15, 30, 1, 0, true); // fade out
+			alpha = pow(alpha, 2);
+		}
+		if (alpha != 0) {
+			ofSetColor(255, alpha * 255);
+			vid.draw(vidX, 0, 1366, 768); // draw video (maybe filter it?)
+		}
 		vidX += 1366*0.5;
 	}
 	

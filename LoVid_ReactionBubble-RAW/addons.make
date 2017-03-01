@@ -1,3 +1,4 @@
+ofxGLWarper
 ofxGui
 ofxKinect
 ofxOpenCv
