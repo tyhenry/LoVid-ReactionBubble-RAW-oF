@@ -10,6 +10,8 @@
 
 #include "Filter Manager\FilterManager.h"
 
+#include "ofxGLWarper.h" // projection mapping
+
 
 class ofApp : public ofBaseApp{
 
@@ -31,7 +33,7 @@ class ofApp : public ofBaseApp{
 	int nearThreshold = 150;
 	int farThreshold = 100;
 
-	float capThreshold = 0.2; // 0-1
+	float capThreshold = 0.25; // 0-1
 
 	ofRectangle wormBounds;
 
@@ -61,6 +63,7 @@ class ofApp : public ofBaseApp{
 
 		float ofW, ofH;
 
+		Display screen;
 		vector<Display> displays;
 
 		SensorManager sensors;
@@ -116,5 +119,8 @@ class ofApp : public ofBaseApp{
 		bool drawTop = false;
 
 		FilterManager filterMgr;
+
+		vector<ofxGLWarper> warpers;
+		vector<ofRectangle> warperBounds;
 
 };

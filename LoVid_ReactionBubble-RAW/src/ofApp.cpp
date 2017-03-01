@@ -25,6 +25,8 @@ void ofApp::setup() {
 	displays.resize(3);
 	for (int i=0; i<3; i++) displays[i] = Display(1366,768);
 
+	screen = Display(ofW,ofH);
+
 	// setup cameras
 
 	for (int i = 0; i < 3; i++) {
@@ -130,7 +132,29 @@ void ofApp::setup() {
 
 
 	filterMgr.setup();
-	filterMgr.bBrcosa = true;
+	filterMgr.bBrcosa = true; // always on
+
+
+	// projection mapping
+
+	float w = ofGetWidth() / 9.;
+	float h = ofGetHeight();
+	float edge = 0;
+	for (int i = 0; i < 9; i++) {
+		warpers.push_back(ofxGLWarper());
+		ofRectangle bounds;
+		bounds.x = edge;
+		bounds.y = 0;
+
+		edge += w;
+
+		bounds.width = edge - bounds.x;
+		bounds.height = h;
+		warperBounds.push_back(bounds);
+		warpers.back().setup(bounds.x,bounds.y,bounds.width,bounds.height);
+		warpers.back().load("warper" + ofToString(i) + ".xml");
+	}
+
 
 
 }
@@ -238,7 +262,7 @@ void ofApp::update() {
 					filterMgr.brcosa.setBrt(1.0);
 				}
 				else {
-					float brt = ofMap(pct, 0,1, 1., 0.3, true); // darken?
+					float brt = ofMap(pct, 0,1, 1., 0.1, true); // darken?
 					filterMgr.brcosa.setBrt(brt);
 				}
 				break;
@@ -299,6 +323,7 @@ void ofApp::update() {
 //--------------------------------------------------------------
 void ofApp::draw() {
 
+	screen.begin();
 	// BACKGROUND VID
 
 	ofTexture& bgTex = walkingVids[bgVid].getTexture();
@@ -313,12 +338,10 @@ void ofApp::draw() {
 
 	// WALKING VIDS
 
-	
 	float vidX = 0;
 	for (int i = 0; i < numBeams; i++) {
 		auto& vid = walkingVids[walkingVidPlaces[i]];
 		float timeElapsedSinceBreak = ofGetElapsedTimef() - beams[i].get();
-		cout << "beam [" << i <<"] time elapsed since break: " << timeElapsedSinceBreak << endl;
 		float alpha = 0;
 		if (timeElapsedSinceBreak < 2) {
 			alpha = ofMap(timeElapsedSinceBreak, 0, 2, 0, 1, true); // fade in
@@ -334,6 +357,8 @@ void ofApp::draw() {
 		}
 		vidX += 1366*0.5;
 	}
+
+	screen.end();
 	
 	ofSetColor(255);
 
@@ -393,6 +418,7 @@ void ofApp::draw() {
 	cams[2].end();
 	displays[2].end();
 
+	screen.begin();
 
 	// draw cams to three screens
 	float dispX = 0;
@@ -400,6 +426,8 @@ void ofApp::draw() {
 		displays[i].draw(dispX, 0);
 		dispX += 1366;
 	}
+
+	screen.end();
 
 
 	// DEBUG VIEW
@@ -450,6 +478,8 @@ void ofApp::draw() {
 		ofDrawBitmapStringHighlight(ofToString(ofGetFrameRate()) + " fps", 100, 100);
 
 		topDisplay.end();
+
+		screen.begin();
 		topDisplay.draw(0, 0);
 
 		//ofSetColor(255, 50);
@@ -494,7 +524,23 @@ void ofApp::draw() {
 			ofTranslate(70, 50);
 		}
 		ofPopMatrix();
+
+		screen.end();
 	}
+
+	// SCREEN DRAWN
+
+	// PROJECTION MAPPING!!!
+
+	for (int i = 0; i < warpers.size(); i++) {
+		warpers[i].begin();
+		auto& tex = screen.getTexture();
+		auto& rect = warperBounds[i];
+		tex.drawSubsection(rect.x,rect.y,rect.width,rect.height,rect.x,rect.y);
+		warpers[i].end();
+	}
+
+	//screen.draw(0,0);
 	
 
 }
@@ -667,6 +713,26 @@ void ofApp::keyReleased(int key) {
 
 
 	if (key == 't') drawTop = !drawTop;
+
+	if (key >= '1' && key <= '9') {
+		for (int i = 0; i < 9; i++) {
+			warpers[i].deactivate();
+		}
+		int idx = key - '1';
+		warpers[idx].activate();
+	}
+
+	if (key == 'w') {
+		for (int i = 0; i < 9; i++) {
+			warpers[i].deactivate();
+		}
+	}
+
+	if (key == 's') {
+		for (int i = 0; i < 9; i++) {
+			warpers[i].save("warper" + ofToString(i,1) + ".xml");
+		}
+	}
 }
 
 //--------------------------------------------------------------

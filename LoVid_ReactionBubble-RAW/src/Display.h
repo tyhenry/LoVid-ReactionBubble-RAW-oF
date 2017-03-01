@@ -39,6 +39,8 @@ public:
 		fbo.draw(x,y,bounds.width, bounds.height);
 	}
 
+	ofTexture& getTexture() { return fbo.getTexture(); }
+
 protected:
 
 	virtual bool allocate(ofRectangle size) {
