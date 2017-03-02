@@ -35,17 +35,12 @@ void ofApp::setup(){
 
 	bLearnBackground = true;
 	threshold = 30;
-
-	ofHideCursor();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
 
-	if (ofGetElapsedTimef() < 45) {
-		bLearnBackground = true; // bg for 45 seconds after start
-		ofLogNotice("ofApp") << "elapsed time: " << ofGetElapsedTimef();
-	}
+	if (ofGetElapsedTimef() < 45) bLearnBackground = true; // bg for 45 seconds after start
 
 	vid.update();
 
@@ -57,7 +52,6 @@ void ofApp::update(){
 		grayImg = colorImg;
 
 		if (bLearnBackground == true) {
-			ofLogNotice("ofApp") << "relearning bg";
 			grayBg = grayImg;
 			bLearnBackground = false;
 		}
@@ -70,14 +64,10 @@ void ofApp::update(){
 
 		if (nBlobs > 0) {
 			drawCam = true;
-			if (camStartTime == 0) camStartTime = ofGetElapsedTimef();
-			if (ofGetElapsedTimef() - camStartTime > 600) { // webcam has been on 10 minutes
-				bLearnBackground = true; // reset bg
-			}
 		}
 		else {
 			drawCam = false;
-			camStartTime = 0;
+			camTimer = 0;
 		}
 	}
 

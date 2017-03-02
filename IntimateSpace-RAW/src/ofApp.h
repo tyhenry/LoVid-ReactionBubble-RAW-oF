@@ -40,5 +40,7 @@ class ofApp : public ofBaseApp{
 
 		bool drawCam = false;
 		bool debugDraw = false;
+
+		float camStartTime = 0; // times how long the webcam has been active, if over 10 minutes, re-learn background
 		
 };
