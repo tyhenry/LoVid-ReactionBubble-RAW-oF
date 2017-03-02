@@ -18,12 +18,14 @@ public:
 		hue = ofVec3f(1.,0.,0.);
 		threshold = 0.;
 		power = 1.;
+		mixIn = 0.;
 	}
 
 	void setHue(ofVec3f rgb)		{ hue = rgb; }
 	void setHue(ofFloatColor c)		{ hue.x = c.r; hue.y = c.g; hue.z = c.b; }
 	void setThreshold(float pct)	{ threshold = pct; }
 	void setPower(float pow)		{ power = pow; }
+	void setMixIn(float mix)		{ mixIn = mix; }
 
 	ofVec3f getHue()		{ return hue; }
 	float getThreshold()	{ return threshold; }
@@ -41,6 +43,7 @@ public:
 		shader.setUniformTexture("u_tex0", tex0, 0);
 		shader.setUniform2f("u_tex0Resolution", tex0.getWidth(), tex0.getHeight());
 		shader.setUniform3f("u_color", hue);
+		shader.setUniform1f("u_mixIn", mixIn);
 		shader.setUniform1f("u_threshold", threshold);
 		shader.setUniform1f("u_power", power);
 		plane.draw();
@@ -55,6 +58,7 @@ private:
 	ofVec3f hue		= ofVec3f(1.,0.,0.);
 	float threshold	= 0.;
 	float power		= 1.;
+	float mixIn		= 0.; // no mix
 
 	string fragmentShader() override
 	{
@@ -73,6 +77,7 @@ private:
 		uniform float u_threshold = 0.0;
 		uniform float u_power = 1.;
 		uniform vec3 u_color = vec3(1.,0.,0.);
+		uniform float u_mixIn = 0.;
 
 		varying vec2 texCoordVarying;
 
@@ -94,6 +99,7 @@ private:
 
 			float threshold = u_threshold;
 			float power = u_power;
+			float mixIn = u_mixIn;
 
 			float l = (color.r + color.g + color.b) / 3.;		// luma \n
 
@@ -105,7 +111,7 @@ private:
 			//vec3 color2 = mix(color,tint,0.5); //\n
 			//color = mix(color,color2,pct); //\n
 
-			color = mix(color,tint,0.5); \n
+			color = mix(color,tint,0.6*mixIn); //\n
 
 			gl_FragColor = vec4(color, 1.);
 		}

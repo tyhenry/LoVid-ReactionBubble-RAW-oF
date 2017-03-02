@@ -67,6 +67,10 @@ public:
 		return avgVal;
 	}
 
+	float recalcBaseAvg() {
+		return avgVal = getAvg();
+	}
+
 	ulong getMin()			{ return min; }
 	ulong getMax()			{ return max; }
 
@@ -114,5 +118,5 @@ private:
 
 	// samples for averaging
 	deque<float> samples; // num samples
-	int maxSamples = 300;
+	int maxSamples = 500;
 };

@@ -114,6 +114,9 @@ class ofApp : public ofBaseApp{
 		ofxCvGrayscaleImage threshNImg1, threshNImg2; // the near thresholded images
 		ofxCvGrayscaleImage threshFImg1, threshFImg2; // the far thresholded images
 
+		ofxCvGrayscaleImage kinect2maskCv;
+		ofImage kinect2maskImg;
+
 		ofxCvContourFinder contourFinder1, contourFinder2;
 		bool gotBg1, gotBg2 = false;
 		bool gotImg1, gotImg2 = false;

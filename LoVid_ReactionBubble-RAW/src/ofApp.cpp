@@ -118,6 +118,9 @@ void ofApp::setup() {
 	pGrayImg1.allocate(k.x, k.y);		pGrayImg2.allocate(k.x, k.y);
 	threshNImg1.allocate(k.x, k.y);		threshNImg2.allocate(k.x, k.y);
 	threshFImg1.allocate(k.x, k.y);		threshFImg2.allocate(k.x, k.y);
+	kinect2maskImg.load("kinect2mask.png");
+	kinect2maskCv.allocate(kinect2maskImg.getWidth(),kinect2maskImg.getHeight());
+	kinect2maskCv.setFromPixels(kinect2maskImg.getPixels());
 
 
 	// generate worms
@@ -204,13 +207,16 @@ void ofApp::update() {
 					filterMgr.bTint = false;
 				}
 				else {
-					float hue = pct * pct * 0.8;
-					filterMgr.tint.setHue(ofFloatColor::fromHsb(hue, 1., hue + 0.5));
+					float hue = sin(ofGetElapsedTimef()) * 0.5 + 0.5;
+					filterMgr.tint.setHue(ofFloatColor::fromHsb(hue, 1., 1.));
+					filterMgr.tint.setMixIn(pct);
 					filterMgr.bTint = true;
 				}
 			}
-			else if (i==1) // PIXELATE
+			else if (i==1 || i == 4) // PIXELATE
 			{
+				pct = max(effectPcts[1], effectPcts[4]); // higher value controls pixel
+
 				if (pct == 0) {
 					filterMgr.pixelate.reset();
 					filterMgr.bPixelate = false;
@@ -241,21 +247,21 @@ void ofApp::update() {
 					filterMgr.bKaleido = false;
 				}
 				else {
-					filterMgr.kaleido.setCenter(ofVec2f(pct));
-					filterMgr.kaleido.setZoom(0.7);
+					filterMgr.kaleido.setCenter(ofVec2f(pct * 0.25 + 0.25));
+					filterMgr.kaleido.setZoom(pct * 0.25 + 0.25);
 					filterMgr.bKaleido = true;
 				}
 			}
-			else if (i==4) // TIME SPEED
-			{
-				if (pct == 0) {
-					walkingVids[bgVid].setSpeed(1.);
-				}
-				else {
-					float speed = ofMap(pct, 0,1, 1,20, true);
-					walkingVids[bgVid].setSpeed(speed);
-				}
-			}
+			//else if (i==4) // TIME SPEED
+			//{
+			//	if (pct == 0) {
+			//		walkingVids[bgVid].setSpeed(1.);
+			//	}
+			//	else {
+			//		float speed = ofMap(pct, 0,1, 1,20, true);
+			//		walkingVids[bgVid].setSpeed(speed);
+			//	}
+			//}
 			//case 4: // CONTRAST
 			//{
 			//	if (pct == 0) {
@@ -598,7 +604,13 @@ void ofApp::capSense(int capIdx, Cap& cap) {
 	//float val = ofMap(cap.get(), cap.getMin(), cap.getMax(), 0, 1, true); // map to tracking min/max
 
 	float val = ofMap(cap.get(), cap.getBaseAvg(), cap.getBaseAvg()*5., 0, 1, true);
+	
+	// hack fix for weird bowl #2, glitch, floating values
+	float thresh = capThreshold;
+	if (capIdx == 2) thresh += .1;
+	
 	effectPcts[capIdx] = ofMap(val, capThreshold, 1.0, 0, 1, true); // threshold at 0.2
+
 
 	// increase
 	//if (val > avg * 1.2) {
@@ -621,6 +633,7 @@ void ofApp::findPeople() {
 		if (gotImg1 && !gotBg1) {
 			pGrayImg1 = grayImg1;
 			gotBg1 = true;
+
 		}
 
 
@@ -689,7 +702,7 @@ void ofApp::findPeople() {
 		threshNImg2.threshold(nearThreshold, true);
 		threshFImg2.threshold(farThreshold);
 
-		cvAnd(threshNImg2.getCvImage(), threshFImg2.getCvImage(), grayImg2.getCvImage(), NULL);
+		cvAnd(threshNImg2.getCvImage(), threshFImg2.getCvImage(), grayImg2.getCvImage(), kinect2maskCv.getCvImage());
 
 		// update the cv images
 		grayImg2.flagImageChanged();
@@ -753,6 +766,13 @@ void ofApp::keyReleased(int key) {
 	if (key == 's') {
 		for (int i = 0; i < 9; i++) {
 			warpers[i].save("warper" + ofToString(i,1) + ".xml");
+		}
+	}
+
+	// re-calibrate bowls
+	if (key == ' ') {
+		for (auto& cap : caps) {
+			cap.recalcBaseAvg();
 		}
 	}
 }
