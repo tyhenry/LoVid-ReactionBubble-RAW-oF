@@ -23,8 +23,7 @@ void ofApp::setup() {
 	// setup displays
 
 	displays.resize(3);
-	ofVec2f dDims(ofW/3,ofH);
-	for (int i=0; i<3; i++) displays[i] = Display(dDims.x,dDims.y);
+	for (int i=0; i<3; i++) displays[i] = Display(1366,768);
 
 	screen = Display(ofW,ofH);
 
@@ -156,7 +155,7 @@ void ofApp::setup() {
 		warpers.back().load("warper" + ofToString(i) + ".xml");
 	}
 
-	ofHideCursor();
+
 
 }
 
@@ -193,36 +192,38 @@ void ofApp::update() {
 
 	for (int i = 0; i < effectPcts.size(); i++) {
 
-	float pct = effectPcts[i];
+		float pct = effectPcts[i];
 
-			if (i==0) // TINT
+		switch (i) {
+
+			case 0: // TINT
 			{
 				if (pct == 0) {
 					filterMgr.tint.reset();
 					filterMgr.bTint = false;
 				}
 				else {
-					float hue = pct * pct * 0.8;
-					filterMgr.tint.setHue(ofFloatColor::fromHsb(hue, 1., hue + 0.5));
+					float hue = pct * 0.8;
+					filterMgr.tint.setHue(ofFloatColor::fromHsb(hue, 1., 1.));
 					filterMgr.bTint = true;
 				}
+				break;
 			}
-			else if (i==1) // PIXELATE
+			case 1: // PIXELATE
 			{
 				if (pct == 0) {
 					filterMgr.pixelate.reset();
 					filterMgr.bPixelate = false;
 				}
 				else {
-					float nDivs = floor(ofMap(pct, 0, 1, 200, 50, true));
+					float nDivs = floor(ofMap(pct, 0, 1, 200, 20, true));
 					filterMgr.pixelate.setNumDivs(ofVec2f(nDivs, floor(nDivs / 1.7778)));
 					filterMgr.bPixelate = true;
 				}
+				break;
 			}
-			else if (i==2 || i == 5) // GLITCH
+			case 2: // GLITCH
 			{
-				pct = max(effectPcts[2],effectPcts[5]); // higher value controls glitch
-
 				if (pct == 0) {
 					filterMgr.glitch.reset();
 					filterMgr.bGlitch = false;
@@ -231,51 +232,42 @@ void ofApp::update() {
 					filterMgr.glitch.setGlitch(pct);
 					filterMgr.bGlitch = true;
 				}
+				break;
 			}
-			else if (i==3) // KALEIDO
+			case 3: // SATURATION
 			{
 				if (pct == 0) {
-					filterMgr.kaleido.reset();
-					filterMgr.bKaleido = false;
+					filterMgr.brcosa.setSat(1.0); // reset
 				}
 				else {
-					filterMgr.kaleido.setCenter(ofVec2f(pct));
-					filterMgr.kaleido.setZoom(0.7);
-					filterMgr.bKaleido = true;
+					float sat = ofMap(pct, 0,1, 2,0, true); // de-saturate
+					filterMgr.brcosa.setSat(sat);
 				}
+				break;
 			}
-			else if (i==4) // TIME SPEED
+			case 4: // CONTRAST
 			{
 				if (pct == 0) {
-					walkingVids[bgVid].setSpeed(1.);
+					filterMgr.brcosa.setCon(1.0); // reset
+				} 
+				else {
+					float con = ofMap(pct, 0, 1, 4., 0.25, true); // de-contrast
+					filterMgr.brcosa.setCon(con);
+				}
+				break;
+			}
+			case 5: // BRIGHTNESS
+			{
+				if (pct == 0) {
+					filterMgr.brcosa.setBrt(1.0);
 				}
 				else {
-					float speed = ofMap(pct, 0,1, 1,20, true);
-					walkingVids[bgVid].setSpeed(speed);
+					float brt = ofMap(pct, 0,1, 1., 0.1, true); // darken?
+					filterMgr.brcosa.setBrt(brt);
 				}
+				break;
 			}
-			//case 4: // CONTRAST
-			//{
-			//	if (pct == 0) {
-			//		filterMgr.brcosa.setCon(1.0); // reset
-			//	} 
-			//	else {
-			//		float con = ofMap(pct, 0, 1, 4., 0.25, true); // de-contrast
-			//		filterMgr.brcosa.setCon(con);
-			//	}
-			//	break;
-			//}
-			//case 5: // BRIGHTNESS
-			//{
-			//	if (pct == 0) {
-			//		filterMgr.brcosa.setBrt(1.0);
-			//	}
-			//	else {
-			//		float brt = ofMap(pct, 0,1, 1., 0.1, true); // darken?
-			//		filterMgr.brcosa.setBrt(brt);
-			//	}
-			//	break;
-			//}
+		}
 	}
 
 	// kinect
