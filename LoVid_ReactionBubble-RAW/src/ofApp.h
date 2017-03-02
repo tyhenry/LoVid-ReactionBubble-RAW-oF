@@ -35,6 +35,8 @@ class ofApp : public ofBaseApp{
 
 	float capThreshold = 0.25; // 0-1
 
+	float triggerVidLen = 60.; // seconds per beam break trigger
+
 	ofRectangle wormBounds;
 
 	public:

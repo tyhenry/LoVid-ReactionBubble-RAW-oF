@@ -9,8 +9,6 @@ void ofApp::setup() {
 	//ofSetLogLevel("Beam", OF_LOG_VERBOSE);
 	//ofSetLogLevel("ofApp", OF_LOG_VERBOSE);
 
-	ofGetDay();
-
 	ofDisableArbTex();
 
 	ofBackground(0);
@@ -353,14 +351,14 @@ void ofApp::draw() {
 	for (int i = 0; i < numBeams; i++) {
 		auto& vid = walkingVids[walkingVidPlaces[i]];
 
-		float timeElapsedSinceBreak = ofGetElapsedTimef() - beams[i].lastBreakTime;
+		float timeElapsedSinceBreak = ofGetElapsedTimef() - beams[i].get();
 		float alpha = 0;
 		if (timeElapsedSinceBreak < 1) {
 			alpha = ofMap(timeElapsedSinceBreak, 0, 1, 0, 1, true); // fade in
 			alpha = pow(alpha,2);
 		}
-		else if (timeElapsedSinceBreak < triggerVidLen) {
-			alpha = ofMap(timeElapsedSinceBreak, triggerVidLen * .75, triggerVidLen, 1, 0, true); // fade out
+		else if (timeElapsedSinceBreak < 30) {
+			alpha = ofMap(timeElapsedSinceBreak, 15, 30, 1, 0, true); // fade out
 			alpha = pow(alpha, 2);
 		}
 		if (alpha != 0) {
@@ -571,25 +569,21 @@ void ofApp::exit()
 
 void ofApp::beamBreak(int beamIdx, Beam& beam) { // trigger or switch video
 
-	ulong time = (ulong)ofGetElapsedTimef();
-	beam.set(time, false); // manually set to current time
+	float timeElapsedSincePrevBreak = ofGetElapsedTimef() - beams[beamIdx].get();
+	if ()
 
-	float timeElapsedSincePrevBreak = ofGetElapsedTimef() - beams[beamIdx].lastBreakTime;
-	ofLogVerbose("ofApp") << "beam [" << beamIdx << "] broken, last break was " << timeElapsedSincePrevBreak << " seconds ago";
-
-	if (timeElapsedSincePrevBreak > triggerVidLen * .75) { // not 2 triggers in a row
-
-		int vidIdx = bgVid;
-		while (vidIdx == bgVid) {
-			vidIdx = ofRandom(4.999);
-		}
-		walkingVidPlaces[beamIdx] = vidIdx;
-
-		beam.lastBreakTime = ofGetElapsedTimef();
-
-		ofLogNotice("ofApp") << "beam [" << beamIdx << "] is now vid [" << vidIdx << "]";
+	int vidIdx = bgVid;
+	while (vidIdx == bgVid) {
+		vidIdx = ofRandom(4.999);
 	}
+	walkingVidPlaces[beamIdx] = vidIdx;
 
+	ulong time = (ulong)ofGetElapsedTimef();
+	beam.set(time,false); // manually set to current time
+
+
+
+	ofLogVerbose("ofApp") << "beam [" << beamIdx << "] is now vid [" << vidIdx << "]";
 }
 
 

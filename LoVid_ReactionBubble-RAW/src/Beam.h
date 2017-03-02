@@ -20,4 +20,6 @@ public:
 	{ 
 		value = (ulong)((float)value * pct);
 	}
+
+	float lastBreakTime = 0;
 };
