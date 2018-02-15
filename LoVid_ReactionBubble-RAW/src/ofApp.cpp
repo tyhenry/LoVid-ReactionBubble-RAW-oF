@@ -57,13 +57,42 @@ void ofApp::setup() {
 
 	sensors.setNumSensors(numBeams, numCaps);
 
-	serial.listDevices();							// get serial devices
-	if (serial.setup(serialIdx, serialSpeed))		// try setup serial
-		sensors.connect(&serial);					//	+ connect sensors
-	else
-		ofLogError("ofApp") 
-		<< "could not connect to serial [" << serialIdx << "] "
-		<< "at speed " << serialSpeed;
+	//serial.listDevices();							// get serial devices
+	//if (serial.setup(serialIdx, serialSpeed))		// try setup serial
+	//	sensors.connect(&serial);					//	+ connect sensors
+	//else
+	//	ofLogError("ofApp") 
+	//	<< "could not connect to serial [" << serialIdx << "] "
+	//	<< "at speed " << serialSpeed;
+
+	int nComs = serial.getDeviceList().size();
+	ofLogNotice("ofApp") << "finding arduino from " << nComs << " serial devices..." << endl;
+	bool gotArduino = false;
+	int arduinoIdx = 0;
+	for (int i = 0; i < nComs; i++) {
+		arduinoIdx = i;
+		cout << "...checking index " << arduinoIdx << endl;
+		if (serial.setup(arduinoIdx, serialSpeed)) {		// try setup serial
+			sensors.connect(&serial);					//	+ connect sensors
+			float start = ofGetElapsedTimef();
+			while (ofGetElapsedTimef() - start < 20.) {
+				if (sensors.update() > 0) {
+					cout << "...got arduino data!" << endl;
+					gotArduino = true;
+					break;
+				}
+			}
+		}
+		if (gotArduino) break;
+		else { cout << "...didn't find arduino at serial [" << arduinoIdx << "]" << endl; }
+	}
+	if (!gotArduino) {
+		ofLogError("ofApp")
+			<< "could not find an arduino device (" << serialSpeed << " bits/s)";
+	}
+	else {
+		ofLogNotice("ofApp") << "found arduino at serial " << arduinoIdx << " (" << serialSpeed << " bits/s)";
+	}
 
 
 	// load vids
@@ -182,9 +211,15 @@ void ofApp::update() {
 		if (beam.get() == 62500) {
 
 			beamBreak(idx, beam);
+			lastBeamBreak = ofGetElapsedTimef();
 			ofLogNotice("ofApp") << "beam [" << idx << "] broken!";
 		}
 		idx++;
+	}
+	if (ofGetElapsedTimef() - lastBeamBreak > 420) { // 7 min without a break
+		int b = ofRandom((float)numBeams-0.01); // random
+		beamBreak(idx, beams[b]);
+		lastBeamBreak = ofGetElapsedTimef();
 	}
 
 	// caps
@@ -361,8 +396,8 @@ void ofApp::draw() {
 
 		float timeElapsedSinceBreak = ofGetElapsedTimef() - beams[i].lastBreakTime;
 		float alpha = 0;
-		if (timeElapsedSinceBreak < 1) {
-			alpha = ofMap(timeElapsedSinceBreak, 0, 1, 0, 1, true); // fade in
+		if (timeElapsedSinceBreak < .5) {
+			alpha = ofMap(timeElapsedSinceBreak, 0, .5, 0, 1, true); // fade in
 			alpha = pow(alpha,2);
 		}
 		else if (timeElapsedSinceBreak < triggerVidLen) {
@@ -747,9 +782,21 @@ void ofApp::keyPressed(int key) {
 void ofApp::keyReleased(int key) {
 
 
-	if (key == 't') drawTop = !drawTop;
+	// re-calibrate bowls
+	if (key == ' ') {
+		for (auto& cap : caps) {
+			cap.recalcBaseAvg();
+		}
+	}
 
-	if (key >= '1' && key <= '9') {
+	else if (key == 'd' || key == 't') drawTop = !drawTop; // debug view
+
+	else if (key == 'f') ofToggleFullscreen();
+
+	else if (key == 'm') ofShowCursor();
+	else if (key == 'h') ofHideCursor();
+
+	else if (key >= '1' && key <= '9') {
 		for (int i = 0; i < 9; i++) {
 			warpers[i].deactivate();
 		}
@@ -757,24 +804,19 @@ void ofApp::keyReleased(int key) {
 		warpers[idx].activate();
 	}
 
-	if (key == 'w') {
+	else if (key == 'w') {
 		for (int i = 0; i < 9; i++) {
 			warpers[i].deactivate();
 		}
 	}
 
-	if (key == 's') {
+	else if (key == 's') {
 		for (int i = 0; i < 9; i++) {
 			warpers[i].save("warper" + ofToString(i,1) + ".xml");
 		}
 	}
 
-	// re-calibrate bowls
-	if (key == ' ') {
-		for (auto& cap : caps) {
-			cap.recalcBaseAvg();
-		}
-	}
+
 }
 
 //--------------------------------------------------------------

@@ -39,6 +39,9 @@ class ofApp : public ofBaseApp{
 
 	ofRectangle wormBounds;
 
+	float lastBeamBreak = 0;
+	float lastCapTrigger = 0;
+
 	public:
 
 		void setup();

@@ -71,7 +71,7 @@ void ofApp::update(){
 		if (nBlobs > 0) {
 			drawCam = true;
 			if (camStartTime == 0) camStartTime = ofGetElapsedTimef();
-			if (ofGetElapsedTimef() - camStartTime > 600) { // webcam has been on 10 minutes
+			if (ofGetElapsedTimef() - camStartTime > 1800) { // webcam has been on 30 minutes
 				bLearnBackground = true; // reset bg
 			}
 		}
